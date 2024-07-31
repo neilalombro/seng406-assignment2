@@ -29,7 +29,7 @@
       },
       {
         "id": 4,
-        "title": "Report of found dog",
+        "title": "Register a dog",
         "diagramType": "STRIDE",
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
