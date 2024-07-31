@@ -17,18 +17,9 @@
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.2.0",
         "cells": []
-      },
-      {
-        "id": 3,
-        "title": "Declare a lost dog",
-        "diagramType": "STRIDE",
-        "placeholder": "New STRIDE diagram description",
-        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
-        "version": "2.2.0",
-        "cells": []
       }
     ],
-    "diagramTop": 4,
+    "diagramTop": 3,
     "reviewer": "",
     "threatTop": 0
   }
