@@ -19,14 +19,17 @@
         "cells": [
           {
             "position": {
-              "x": 170,
-              "y": 110
+              "x": 290,
+              "y": 60
             },
             "size": {
               "width": 112.5,
               "height": 60
             },
             "attrs": {
+              "text": {
+                "text": "Owner"
+              },
               "body": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
@@ -35,11 +38,11 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "f145ce34-8d29-4e6c-8c3f-c5bcdb86e15d",
             "zIndex": 1,
+            "id": "f145ce34-8d29-4e6c-8c3f-c5bcdb86e15d",
             "data": {
               "type": "tm.Actor",
-              "name": "Actor",
+              "name": "Owner",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -63,20 +66,20 @@
             },
             "id": "b7ae4064-4342-4a61-a006-0708bc4f6c0c",
             "source": {
-              "x": 399,
-              "y": 50
+              "x": 620,
+              "y": 20
             },
             "target": {
-              "x": 400,
-              "y": 410
-            }
+              "x": 620,
+              "y": 530
+            },
+            "vertices": []
           },
           {
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
                 },
@@ -92,59 +95,291 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "USer Data",
-              "description": "Data",
+              "name": "Email Address",
+              "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [
-                {
-                  "id": "f6a5132f-f161-43a1-9782-767eefbb5cce",
-                  "title": "Threat",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "YUP",
-                  "mitigation": "NONDE",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 1,
-                  "score": ""
-                }
-              ],
-              "threatFrequency": {
-                "tampering": 1,
-                "informationDisclosure": 0,
-                "denialOfService": 0
-              }
+              "threats": []
             },
-            "id": "b3e03090-937a-4850-92aa-4bb57ddae3a2",
+            "id": "70676c70-26e0-4da4-8aa9-a3e6bf56ee3f",
             "source": {
-              "x": 283,
-              "y": 138
+              "x": 990,
+              "y": 430
             },
             "target": {
-              "cell": "5cde68d5-be21-43d5-a4e8-c8536d9cd7f3"
+              "x": 780,
+              "y": 430
             },
-            "vertices": [],
             "labels": [
-              "USer Data"
+              "Email Address"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Invoice data",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "1a811292-b113-494c-b358-688fdc368a95",
+            "source": {
+              "x": 670,
+              "y": 430
+            },
+            "target": {
+              "x": 380,
+              "y": 130
+            },
+            "vertices": [
+              {
+                "x": 510,
+                "y": 380
+              },
+              {
+                "x": 440,
+                "y": 250
+              }
+            ],
+            "labels": [
+              "Invoice data"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Invoice ack",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "1d90920f-1a0f-4e2f-9164-1686ac54d59e",
+            "source": {
+              "x": 330,
+              "y": 130
+            },
+            "target": {
+              "x": 680,
+              "y": 450
+            },
+            "vertices": [
+              {
+                "x": 440,
+                "y": 410
+              }
+            ],
+            "labels": [
+              "Invoice ack"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Renew Data",
+              "description": "Old tag ID, and address to deliver the tag too",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "25228b7a-2235-46a8-8253-d552e9e1d2e5",
+            "source": {
+              "x": 410,
+              "y": 90
+            },
+            "target": {
+              "x": 690,
+              "y": 70
+            },
+            "vertices": [
+              {
+                "x": 530,
+                "y": 90
+              }
+            ],
+            "labels": [
+              "Renew Data"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "New Tag",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "1e8d10a3-e782-43c9-bbb7-94f03d6400a1",
+            "source": {
+              "x": 770,
+              "y": 70
+            },
+            "target": {
+              "x": 980,
+              "y": 120
+            },
+            "labels": [
+              "New Tag"
+            ],
+            "vertices": [
+              {
+                "x": 840,
+                "y": 100
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Tag data",
+              "description": "IDs for both the old and the new tag",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "99df17e5-b03d-4e6c-ac5e-fdf26e24ec76",
+            "source": {
+              "x": 742,
+              "y": 90
+            },
+            "target": {
+              "x": 750,
+              "y": 200
+            },
+            "labels": [
+              "Tag data"
             ]
           },
           {
             "position": {
-              "x": 600,
-              "y": 160
+              "x": 1000,
+              "y": 90
             },
             "size": {
               "width": 120,
               "height": 60
             },
             "attrs": {
+              "text": {
+                "text": "Dog Store"
+              },
               "topLine": {
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
@@ -156,11 +391,11 @@
             },
             "visible": true,
             "shape": "store",
-            "id": "5cde68d5-be21-43d5-a4e8-c8536d9cd7f3",
             "zIndex": 11,
+            "id": "5cde68d5-be21-43d5-a4e8-c8536d9cd7f3",
             "data": {
               "type": "tm.Store",
-              "name": "Store",
+              "name": "Dog Store",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -170,6 +405,158 @@
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 700,
+              "y": 30
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Renew Registration"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "24c8060e-c575-4a03-88b9-d240520dedf1",
+            "zIndex": 13,
+            "data": {
+              "type": "tm.Process",
+              "name": "Renew Registration",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 1000,
+              "y": 400
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Owner Store"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "6d2f1afc-ef38-4d97-93f2-1f91444f6ac3",
+            "zIndex": 14,
+            "data": {
+              "type": "tm.Store",
+              "name": "Owner Store",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 700,
+              "y": 400
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Invoice Process"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "a324c75f-3aca-488a-9863-9b34b48077b7",
+            "zIndex": 15,
+            "data": {
+              "type": "tm.Process",
+              "name": "Invoice Process",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 720,
+              "y": 210
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Delivery Service"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "d3ae8552-b475-43b6-9b52-b2a80b55a51a",
+            "zIndex": 16,
+            "data": {
+              "type": "tm.Process",
+              "name": "Delivery Service",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
               "threats": []
             }
           }
