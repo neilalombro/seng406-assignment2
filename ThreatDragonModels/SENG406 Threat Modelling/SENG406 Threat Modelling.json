@@ -229,106 +229,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Delivery Ack",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "ffa49aea-e027-4f6f-ada3-7e003a1cfd04",
-            "labels": [
-              "Delivery Ack"
-            ],
-            "source": {
-              "x": 400,
-              "y": 130
-            },
-            "target": {
-              "x": 520,
-              "y": 230
-            },
-            "vertices": [
-              {
-                "x": 450,
-                "y": 210
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Tracking data",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "23c40177-9b4a-4795-9015-232dcaba114a",
-            "labels": [
-              "Tracking data"
-            ],
-            "source": {
-              "x": 520,
-              "y": 260
-            },
-            "target": {
-              "x": 370,
-              "y": 140
-            },
-            "vertices": [
-              {
-                "x": 420,
-                "y": 240
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Tag data",
               "description": "IDs for both the old and the new tag",
               "outOfScope": false,
@@ -378,51 +278,6 @@
             "target": {
               "x": 620,
               "y": 530
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Email address",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "70676c70-26e0-4da4-8aa9-a3e6bf56ee3f",
-            "labels": [
-              "Email address"
-            ],
-            "source": {
-              "x": 990,
-              "y": 430
-            },
-            "target": {
-              "x": 780,
-              "y": 430
             },
             "vertices": []
           },
@@ -528,6 +383,311 @@
             ],
             "labels": [
               "Terminate data"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Email address",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "70676c70-26e0-4da4-8aa9-a3e6bf56ee3f",
+            "labels": [
+              "Email address"
+            ],
+            "source": {
+              "x": 990,
+              "y": 410
+            },
+            "target": {
+              "x": 780,
+              "y": 430
+            },
+            "vertices": [
+              {
+                "x": 900,
+                "y": 410
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Email address",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "89da80b9-8e5f-414a-bfab-bb159f128457",
+            "source": {
+              "x": 990,
+              "y": 380
+            },
+            "target": {
+              "x": 780,
+              "y": 350
+            },
+            "vertices": [
+              {
+                "x": 890,
+                "y": 360
+              }
+            ],
+            "labels": [
+              "Email address"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Termination details",
+              "description": "Contains link to registration process",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "43ea9fee-7fd1-4ed5-bad4-9e12a98583e8",
+            "source": {
+              "x": 700,
+              "y": 360
+            },
+            "target": {
+              "x": 350,
+              "y": 130
+            },
+            "vertices": [
+              {
+                "x": 430,
+                "y": 340
+              }
+            ],
+            "labels": [
+              "Termination details"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Tracking data",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "23c40177-9b4a-4795-9015-232dcaba114a",
+            "labels": [
+              "Tracking data"
+            ],
+            "source": {
+              "x": 530,
+              "y": 220
+            },
+            "target": {
+              "x": 390,
+              "y": 130
+            },
+            "vertices": [
+              {
+                "x": 520,
+                "y": 200
+              },
+              {
+                "x": 490,
+                "y": 180
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Delivery Ack",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "ffa49aea-e027-4f6f-ada3-7e003a1cfd04",
+            "labels": [
+              "Delivery Ack"
+            ],
+            "source": {
+              "x": 410,
+              "y": 120
+            },
+            "target": {
+              "x": 540,
+              "y": 210
+            },
+            "vertices": [
+              {
+                "x": 500,
+                "y": 160
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Termination email ack",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "317f12d0-32b6-4211-9160-26a814edbd49",
+            "source": {
+              "x": 370,
+              "y": 130
+            },
+            "target": {
+              "x": 690,
+              "y": 340
+            },
+            "vertices": [
+              {
+                "x": 460,
+                "y": 310
+              },
+              {
+                "x": 630,
+                "y": 340
+              }
             ],
             "tools": {
               "items": [
@@ -640,70 +800,13 @@
                 "button-remove",
                 "vertices",
                 "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
                 "target-arrowhead"
               ],
               "name": null
-            }
+            },
+            "labels": [
+              "Termination email ack"
+            ]
           },
           {
             "position": {
@@ -786,7 +889,7 @@
           {
             "position": {
               "x": 1000,
-              "y": 400
+              "y": 360
             },
             "size": {
               "width": 120,
@@ -924,6 +1027,43 @@
             "data": {
               "type": "tm.Process",
               "name": "Terminate Registration",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 700,
+              "y": 320
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Email Process"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "5984ba84-b631-445e-8954-e192deeaf9bd",
+            "zIndex": 18,
+            "data": {
+              "type": "tm.Process",
+              "name": "Email Process",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
