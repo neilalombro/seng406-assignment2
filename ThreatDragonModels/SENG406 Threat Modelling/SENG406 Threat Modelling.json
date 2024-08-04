@@ -139,110 +139,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Invoice data",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "1a811292-b113-494c-b358-688fdc368a95",
-            "labels": [
-              "Invoice data"
-            ],
-            "source": {
-              "x": 670,
-              "y": 430
-            },
-            "target": {
-              "x": 380,
-              "y": 130
-            },
-            "vertices": [
-              {
-                "x": 510,
-                "y": 380
-              },
-              {
-                "x": 440,
-                "y": 250
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Invoice ack",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "1d90920f-1a0f-4e2f-9164-1686ac54d59e",
-            "labels": [
-              "Invoice ack"
-            ],
-            "source": {
-              "x": 330,
-              "y": 130
-            },
-            "target": {
-              "x": 680,
-              "y": 450
-            },
-            "vertices": [
-              {
-                "x": 440,
-                "y": 410
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Renew Data",
               "description": "Old tag ID, and address to deliver the tag too",
               "outOfScope": false,
@@ -363,8 +259,221 @@
               "y": 90
             },
             "target": {
-              "x": 750,
-              "y": 200
+              "cell": "d3ae8552-b475-43b6-9b52-b2a80b55a51a"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Invoice ack",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "1d90920f-1a0f-4e2f-9164-1686ac54d59e",
+            "labels": [
+              "Invoice ack"
+            ],
+            "source": {
+              "x": 310,
+              "y": 130
+            },
+            "target": {
+              "x": 680,
+              "y": 450
+            },
+            "vertices": [
+              {
+                "x": 370,
+                "y": 410
+              }
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Invoice data",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "1a811292-b113-494c-b358-688fdc368a95",
+            "labels": [
+              "Invoice data"
+            ],
+            "source": {
+              "x": 670,
+              "y": 430
+            },
+            "target": {
+              "x": 330,
+              "y": 130
+            },
+            "vertices": [
+              {
+                "x": 450,
+                "y": 400
+              },
+              {
+                "x": 350,
+                "y": 290
+              }
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
             }
           },
           {
@@ -525,8 +634,8 @@
           },
           {
             "position": {
-              "x": 720,
-              "y": 210
+              "x": 520,
+              "y": 220
             },
             "size": {
               "width": 60,
@@ -534,7 +643,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Delivery Service"
+                "text": "Council Delivery\n Service"
               },
               "body": {
                 "stroke": "#333333",
@@ -548,7 +657,7 @@
             "id": "d3ae8552-b475-43b6-9b52-b2a80b55a51a",
             "data": {
               "type": "tm.Process",
-              "name": "Delivery Service",
+              "name": "Council Delivery\n Service",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
