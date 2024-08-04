@@ -335,6 +335,9 @@
               "threats": []
             },
             "id": "ffa49aea-e027-4f6f-ada3-7e003a1cfd04",
+            "labels": [
+              "Delivery Ack"
+            ],
             "source": {
               "x": 400,
               "y": 130
@@ -348,9 +351,6 @@
                 "x": 450,
                 "y": 210
               }
-            ],
-            "labels": [
-              "Delivery Ack"
             ]
           },
           {
@@ -385,6 +385,9 @@
               "threats": []
             },
             "id": "23c40177-9b4a-4795-9015-232dcaba114a",
+            "labels": [
+              "Tracking data"
+            ],
             "source": {
               "x": 520,
               "y": 260
@@ -398,9 +401,6 @@
                 "x": 420,
                 "y": 240
               }
-            ],
-            "labels": [
-              "Tracking data"
             ]
           },
           {
@@ -537,7 +537,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Dog Store"
+                "text": "Dog Datastore"
               },
               "topLine": {
                 "strokeWidth": 1.5,
@@ -554,7 +554,7 @@
             "id": "5cde68d5-be21-43d5-a4e8-c8536d9cd7f3",
             "data": {
               "type": "tm.Store",
-              "name": "Dog Store",
+              "name": "Dog Datastore",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -615,7 +615,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Owner Store"
+                "text": "Owner Datastore"
               },
               "topLine": {
                 "strokeWidth": 1.5,
@@ -632,7 +632,7 @@
             "id": "6d2f1afc-ef38-4d97-93f2-1f91444f6ac3",
             "data": {
               "type": "tm.Store",
-              "name": "Owner Store",
+              "name": "Owner Datastore",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -740,8 +740,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "224d4260-a470-40f1-99a9-47a65274d57c",
             "zIndex": 17,
+            "id": "224d4260-a470-40f1-99a9-47a65274d57c",
             "data": {
               "type": "tm.Process",
               "name": "Terminate Registration",
