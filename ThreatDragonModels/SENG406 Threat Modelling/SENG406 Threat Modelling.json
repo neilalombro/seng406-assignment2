@@ -1066,11 +1066,1160 @@
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.2.0",
-        "cells": []
+        "cells": [
+          {
+            "position": {
+              "x": 103.75,
+              "y": 80
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Member of public"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "859a3b6c-d077-4f56-8550-99e81b658554",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Member of public",
+              "description": "A member of the public is a person not necessarily associated with the application who finds a lost dog",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "providesAuthentication": false,
+              "threats": [
+                {
+                  "id": "7a0522ab-3ea0-46d2-b299-a341da9e4dac",
+                  "title": "Fake dog report",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "A member of the public fakes a report of a lost dog in an attempt to gain more information about dogs registered in the system.",
+                  "mitigation": "Require photographic proof of the lost dog and its associated ID number when reporting a found dog.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                },
+                {
+                  "id": "6e8e5a27-0ad2-4a2b-9a0e-9e30c288fae7",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 1
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 653.75,
+              "y": 100
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Dog services"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "6820ef83-9b65-48e5-ab4d-046ee47dfd87",
+            "zIndex": 2,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Dog services",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "providesAuthentication": false,
+              "threats": [
+                {
+                  "id": "621eba5e-1a6a-4ddc-85c1-dd345eda393f",
+                  "title": "Malicious actor pretends to be dog services",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Malicious actor pretends to be dog services in order to pick up lost dogs.",
+                  "mitigation": "Provide anticipated identification for the dog services coming to pick up the dog.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                },
+                {
+                  "id": "28d073a3-df51-4c9e-9404-98d7a60dc526",
+                  "title": "Dog services pretends to not recieve dog location",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Dog services pretends to not recieve lost dog location for pickup",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 1
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 77.5,
+              "y": 280
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Council"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "07b59fca-b7a0-4203-9fa8-c4c53b38ae3e",
+            "zIndex": 3,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Council",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "providesAuthentication": false,
+              "threats": [
+                {
+                  "id": "ca9d6381-3560-493b-8138-6ee0a6bd152b",
+                  "title": "Council does not contact dog owner",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "A council member (or malicious actor pretending to be a council member) does not contact a dog owner about their lost dog.",
+                  "mitigation": "Reports of lost dogs are saved in the system under integrity control.\nLost dog reports have reminders on timers.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                },
+                {
+                  "id": "db8b340d-3d2d-45ec-bd78-c67bfb4e34f5",
+                  "title": "Council does not contact dog owner",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "A council member (or malicious actor pretending to be a council member) does not contact a dog owner about their lost dog.",
+                  "mitigation": "Reports of lost dogs are saved in the system under integrity control.\nLost dog reports have reminders on timers.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 1
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 290,
+              "y": 480
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Dog owner"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "65578782-208b-4114-8b7f-147d15b3efcf",
+            "zIndex": 4,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Dog owner",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "providesAuthentication": false,
+              "threats": [
+                {
+                  "id": "4b9a9e79-97bf-4aa1-91d8-5596b0a637ce",
+                  "title": "Dog owner registered with invalid details",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "A dog owner is registered with invalid/incorrect details (such as email address).",
+                  "mitigation": "Require email address validation when registering.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                },
+                {
+                  "id": "2822bc88-f5b4-4c23-9269-276e5b3b325c",
+                  "title": "Dog ower uses another's details",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "A dog owner uses another person's email address, or uses another person's dog details.",
+                  "mitigation": "Require email validation when registering.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 1
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 380,
+              "y": 150
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Report found dog"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "1164ca02-d59c-4d7f-84d1-22c44984c458",
+            "zIndex": 5,
+            "data": {
+              "type": "tm.Process",
+              "name": "Report found dog",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "7fe1fd8d-890b-46d1-a787-28dcfcad7b96",
+                  "title": "Report a fake dog",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "A dog that does not exist is reported as found",
+                  "mitigation": "Require proof of found dog, and its associated ID.\nUse HTTP-only and secure cookies.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                },
+                {
+                  "id": "da4f8c76-d166-45fe-9c1b-fb5f99b7394b",
+                  "title": "Adversary in the middle change content of dog report",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An adversary-in-the-middle intercepts the dog report and modifies its content.",
+                  "mitigation": "Use secure connection, http-only and secure cookie with unique session id.\nSign (hash) content with user's private key.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": ""
+                },
+                {
+                  "id": "fcf507b0-c1c0-4ad8-be49-a619cd37b198",
+                  "title": "Deny having reported dog",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Member of public claims they have not reported a lost dog.",
+                  "mitigation": "Trace/log dog reports.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 1,
+                "repudiation": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 342.5,
+              "y": 370
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Lookup dog details"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "ffa48c8f-a39f-43ec-9be4-4db8536145bc",
+            "zIndex": 6,
+            "data": {
+              "type": "tm.Process",
+              "name": "Lookup dog details",
+              "description": "Search for dog details and owner details based on given dog ID",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "c6eac6bf-7cdf-441b-8d2e-ef00c4d477b6",
+                  "title": "Adversary in the middle attack",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "A man-in-the-middle could modify dog (and owner) details as the request is placed.",
+                  "mitigation": "Use secured connection protocol.\nEnsure IP is consistent for the whole process.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 13,
+                  "score": ""
+                },
+                {
+                  "id": "aea3febd-406e-4c5e-a9fc-d690a73e7369",
+                  "title": "Flooding of requests from same IP",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Many dog owner detail requests per second coming from the same IP.",
+                  "mitigation": "Enable a CAPTCHA-like feature\nDisallow multiple requests from same origin IP (IP blocking after multiple calls)",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
+                  "score": ""
+                },
+                {
+                  "id": "6e784046-f9ae-4466-8e16-97a222aa90f7",
+                  "title": "Details stolen",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Details about a dog (and its owner) are stolen as the request is placed - adversary in the middle.",
+                  "mitigation": "Use Transport Layer Security (TLS) for the communication.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 15,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 0
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 103.75,
+              "y": 450
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Contact dog owner"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "891009d0-3c7d-44e2-9928-2af92c13b952",
+            "zIndex": 7,
+            "data": {
+              "type": "tm.Process",
+              "name": "Contact dog owner",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "b948025b-7c00-4761-98f5-e93e8e3bb709",
+                  "title": "Malicious actor pretending to be council",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Malicious actor pretends to be council and contact dog owner to get more information about them/their dog.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 16,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 630,
+              "y": 340
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Dogs"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "9b990578-a270-454b-ba56-52df71391f82",
+            "zIndex": 8,
+            "data": {
+              "type": "tm.Store",
+              "name": "Dogs",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": [
+                {
+                  "id": "419eb29f-2907-43ce-9d0c-37266ffa52db",
+                  "title": "Adversary in the middle change dog details",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An adversary-in-the-middle intercepts the dog detail lookup to modify the dog's or associated owner's details.",
+                  "mitigation": "Use secure connection, http-only and secure cookie with unique session id.\nSign (hash) content with user's private key.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 17,
+                  "score": ""
+                },
+                {
+                  "id": "01fda530-fb04-466d-925a-bb47211c6d4f",
+                  "title": "Dog data stolen",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "An adversary in the middle can steal the data related to a dog and its owner.",
+                  "mitigation": "Use Transport Layer Security (TLS) for the communication.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 18,
+                  "score": ""
+                },
+                {
+                  "id": "e606be52-e787-4af3-8080-94e95625487f",
+                  "title": "Many reports of a lost dog",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Many reports of a lost dog in an attempt to flood the system.",
+                  "mitigation": "Enable a CAPTCHA-like feature.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 19,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 1
+              }
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "dog tag id,\ncurrent address",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "0b0b06bb-4aff-4850-8c0e-21f2299623b2",
+                  "title": "Insecure connection",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Data can be tampered by an adversary in the middle where the address for the found dog or its ID can be modified.",
+                  "mitigation": "Use Transport Layer Security for the communication.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 20,
+                  "score": ""
+                },
+                {
+                  "id": "f2696a6e-94c1-4009-bfd0-42e00cc1950e",
+                  "title": "Personal data can be stolen",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "An adversary in the middle can steal the personal data of the member of public (like their address).",
+                  "mitigation": "Use Transport Layer Security (TLS) for the communication.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 21,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "id": "6261f43a-30f7-4f71-a0ea-33f94c423789",
+            "source": {
+              "cell": "859a3b6c-d077-4f56-8550-99e81b658554"
+            },
+            "target": {
+              "cell": "1164ca02-d59c-4d7f-84d1-22c44984c458"
+            },
+            "labels": [
+              "dog tag id,\ncurrent address"
+            ],
+            "vertices": [
+              {
+                "x": 330,
+                "y": 110
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Dog pickup ack",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "aaa7020c-1178-44f2-a97d-b01d668f071c",
+            "source": {
+              "cell": "1164ca02-d59c-4d7f-84d1-22c44984c458"
+            },
+            "target": {
+              "cell": "859a3b6c-d077-4f56-8550-99e81b658554"
+            },
+            "labels": [
+              "Dog pickup ack"
+            ],
+            "vertices": [
+              {
+                "x": 260,
+                "y": 203
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "dog details",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "d6d3b32e-460b-478f-a124-c4bcf95f1604",
+                  "title": "Insecure connection",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Data can be tampered by an adversary in the middle where the address for the found dog or its ID can be modified.",
+                  "mitigation": "Use Transport Layer Security (TLS) for the communication.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 22,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "id": "d4713d94-13bf-4d0e-a75d-d2266b728e0b",
+            "source": {
+              "cell": "1164ca02-d59c-4d7f-84d1-22c44984c458"
+            },
+            "target": {
+              "cell": "6820ef83-9b65-48e5-ab4d-046ee47dfd87"
+            },
+            "labels": [
+              "dog details"
+            ],
+            "vertices": [
+              {
+                "x": 500,
+                "y": 130
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Dog pickup confirmation",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "76c8a76f-2970-45cd-8512-18ce17a5a800",
+            "source": {
+              "cell": "6820ef83-9b65-48e5-ab4d-046ee47dfd87"
+            },
+            "target": {
+              "cell": "1164ca02-d59c-4d7f-84d1-22c44984c458"
+            },
+            "labels": [
+              "Dog pickup confirmation"
+            ],
+            "vertices": [
+              {
+                "x": 550,
+                "y": 250
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Dog owner details",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "0d650579-908d-40e7-bdec-d80a9bf1828e",
+            "source": {
+              "cell": "ffa48c8f-a39f-43ec-9be4-4db8536145bc"
+            },
+            "target": {
+              "cell": "07b59fca-b7a0-4203-9fa8-c4c53b38ae3e"
+            },
+            "labels": [
+              "Dog owner details"
+            ],
+            "vertices": [
+              {
+                "x": 300,
+                "y": 270
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "dog details",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "20f10d4c-9070-4a59-b1ef-f501343a1ae2",
+            "source": {
+              "cell": "07b59fca-b7a0-4203-9fa8-c4c53b38ae3e"
+            },
+            "target": {
+              "cell": "ffa48c8f-a39f-43ec-9be4-4db8536145bc"
+            },
+            "labels": [
+              "dog details"
+            ],
+            "vertices": [
+              {
+                "x": 320,
+                "y": 360
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "dog tag id",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "7d287913-66a6-44b2-a05e-d8cdbcec92ca",
+            "source": {
+              "cell": "ffa48c8f-a39f-43ec-9be4-4db8536145bc"
+            },
+            "target": {
+              "cell": "9b990578-a270-454b-ba56-52df71391f82"
+            },
+            "labels": [
+              "dog tag id"
+            ],
+            "vertices": [
+              {
+                "x": 580,
+                "y": 290
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "dog owner details",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "1e48ba10-8a29-433b-8a8b-0e1d0fbb8c3c",
+            "source": {
+              "cell": "9b990578-a270-454b-ba56-52df71391f82"
+            },
+            "target": {
+              "cell": "ffa48c8f-a39f-43ec-9be4-4db8536145bc"
+            },
+            "labels": [
+              "dog owner details"
+            ],
+            "vertices": [
+              {
+                "x": 580,
+                "y": 390
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Owner email address",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "488496da-1559-4c31-b98c-99262d2718d8",
+                  "title": "Insecure connection",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Adversary in the middle could modify the data sent to the dog owner ",
+                  "mitigation": "Use Transport Layer Security for the communication.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 23,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "id": "f6561c1d-5d9b-4eeb-bd4d-4e1cec511c7f",
+            "source": {
+              "cell": "07b59fca-b7a0-4203-9fa8-c4c53b38ae3e"
+            },
+            "target": {
+              "cell": "891009d0-3c7d-44e2-9928-2af92c13b952"
+            },
+            "labels": [
+              "Owner email address"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Dog details ",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "13713d27-9738-4646-b85a-a281c2d544de",
+            "source": {
+              "cell": "891009d0-3c7d-44e2-9928-2af92c13b952"
+            },
+            "target": {
+              "cell": "65578782-208b-4114-8b7f-147d15b3efcf"
+            },
+            "vertices": [],
+            "labels": [
+              "Dog details "
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "7fe9210f-6b11-41c5-9e3d-79f045e1013b",
+            "source": {
+              "x": 500,
+              "y": 40
+            },
+            "target": {
+              "x": 750,
+              "y": 450
+            },
+            "vertices": [
+              {
+                "x": 480,
+                "y": 180
+              },
+              {
+                "x": 510,
+                "y": 420
+              }
+            ]
+          }
+        ]
       }
     ],
     "diagramTop": 6,
     "reviewer": "",
-    "threatTop": 1
+    "threatTop": 23
   }
 }
