@@ -2704,8 +2704,8 @@
                 "text": "Generate Invoice"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2719,12 +2719,99 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "33dcb808-7ba2-4f95-9df6-78b1654c3085",
+                  "title": "Attacker Alters Data",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "See #61",
+                  "mitigation": "See #61",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 98,
+                  "score": ""
+                },
+                {
+                  "id": "bee503ad-2531-4b3a-b0ae-4b94ddc1f63c",
+                  "title": "Repudiation Threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "See #62",
+                  "mitigation": "See #62",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 99,
+                  "score": ""
+                },
+                {
+                  "id": "e321d1c2-d56a-4296-932e-656ba3cf77d6",
+                  "title": "Impersonation",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "See #60",
+                  "mitigation": "See #60",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 100,
+                  "score": ""
+                },
+                {
+                  "id": "6be632ca-cd35-4a6f-876f-b2624c33ff30",
+                  "title": "Unauthorised Access",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "See #63",
+                  "mitigation": "See #63",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 101,
+                  "score": ""
+                },
+                {
+                  "id": "50ef7e35-c072-436a-b1ab-dcdf02329255",
+                  "title": "System Flooding",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "See #64",
+                  "mitigation": "See #64",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 102,
+                  "score": ""
+                },
+                {
+                  "id": "f13bcfcc-ff42-4490-a3f0-e9a9706fb5be",
+                  "title": "Attacker Gains Elevated Privilege",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "See #65",
+                  "mitigation": "See #65",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 103,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 1,
+                "repudiation": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 1
+              }
             }
           }
         ]
@@ -3890,6 +3977,6 @@
     ],
     "diagramTop": 6,
     "reviewer": "",
-    "threatTop": 97
+    "threatTop": 103
   }
 }
