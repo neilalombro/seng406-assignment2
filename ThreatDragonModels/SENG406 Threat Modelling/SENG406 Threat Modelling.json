@@ -1924,6 +1924,145 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Invoice",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "5cbb4088-c8a2-4342-ae77-17fad4976bfd",
+            "source": {
+              "cell": "4605064b-f50c-4e5e-b4ab-5a03234199e4"
+            },
+            "target": {
+              "cell": "224de19f-62d5-48cb-ab10-fbb558b9ea89"
+            },
+            "labels": [
+              "Invoice"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Registration Confirmation Email",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "8e60b3cc-9468-43f8-af67-c9f68ffafb9f",
+            "source": {
+              "cell": "224de19f-62d5-48cb-ab10-fbb558b9ea89"
+            },
+            "target": {
+              "x": 210,
+              "y": 270
+            },
+            "vertices": [
+              {
+                "x": 280,
+                "y": 440
+              }
+            ],
+            "labels": [
+              "Registration Confirmation Email"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Registration Email Ack",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "b1c1cf0f-db89-43e8-ac8f-4800a7eee178",
+            "source": {
+              "cell": "39da7189-4dc3-43c2-a17e-85f9719a11ea"
+            },
+            "target": {
+              "cell": "224de19f-62d5-48cb-ab10-fbb558b9ea89"
+            },
+            "vertices": [
+              {
+                "x": 350,
+                "y": 371
+              }
+            ],
+            "labels": [
+              "Registration Email Ack"
+            ]
+          },
+          {
             "position": {
               "x": 160,
               "y": 210
