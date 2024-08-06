@@ -2456,8 +2456,8 @@
                 "text": "Council Delivery Service"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2471,12 +2471,99 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "f02ea4de-db7c-4c11-bffa-2ceceb0620c2",
+                  "title": "Impersonate Users to Steal Tag Packages",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Using data that does not belong to them, a third party has packages sent to their own address instead of that of the intended recipient",
+                  "mitigation": " - Use secure authentication methods for delivery service access\n - Ensure secure communication between the delivery service, the owner, and the council. Better yet, ensure these methods are encrypted and require authentication.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 86,
+                  "score": ""
+                },
+                {
+                  "id": "25451f21-a81c-4366-b86d-d76236515ea3",
+                  "title": "Attacker Edits Delivery Data",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An attacker modifies the delivery address, the delivery schedule, or the tracking information",
+                  "mitigation": " - Use secure communication channels, such as HTTPS, to ensure that data is transmitted safely and discretely\n - Implement hashing or digital signatures to check the integrity of data\n - Validate all incoming data to ensure it hasn't been tampered with\n - Restrict access to delivery data to authorised personnel only",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 87,
+                  "score": ""
+                },
+                {
+                  "id": "3586226d-a921-42f4-9c3a-f68f31c33537",
+                  "title": "Delivery Service Errors ",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "See #47",
+                  "mitigation": "See #47",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 88,
+                  "score": ""
+                },
+                {
+                  "id": "de1d836c-ad38-438a-9d6d-04fcd0b262af",
+                  "title": "Data Leak",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "See #49",
+                  "mitigation": "See #49",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 89,
+                  "score": ""
+                },
+                {
+                  "id": "a5f0b605-4655-4ccc-81f7-0a25961014f4",
+                  "title": "System Flooding",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "See #50",
+                  "mitigation": "See #50",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 90,
+                  "score": ""
+                },
+                {
+                  "id": "854c23c6-5a9a-45ee-84e6-3d3a5456ecd7",
+                  "title": "Gains Privilege",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "See #51",
+                  "mitigation": "See #51",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 91,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 1,
+                "repudiation": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 1
+              }
             }
           },
           {
@@ -3716,6 +3803,6 @@
     ],
     "diagramTop": 6,
     "reviewer": "",
-    "threatTop": 85
+    "threatTop": 91
   }
 }
