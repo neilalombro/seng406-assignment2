@@ -2076,8 +2076,8 @@
                 "text": "Owner"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2091,9 +2091,40 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "7ef3e933-da08-4930-80b3-5bb879af7b7f",
+                  "title": "Using another user's credentials",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Using another user's credentials to register a dog as another user.\nPotentially due to a user having weak credentials being stolen",
+                  "mitigation": "Send confirmation emails or letters to ensure that users are who they claim to be",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 66,
+                  "score": ""
+                },
+                {
+                  "id": "9c96c54d-42a7-498b-ab93-4fa3f8693c3c",
+                  "title": "Claiming no registration",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "After registering a dog and receiving the tag, users could claim that they did not register the dog and refuse to pay the invoice",
+                  "mitigation": "Store a record of users interactions with the system",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 67,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 1
+              }
             }
           },
           {
@@ -2110,8 +2141,8 @@
                 "text": "Register"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2125,12 +2156,34 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "01560f37-c485-407c-aec8-e6bbbbf1ee39",
+                  "title": "Altering Registration Data",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Man in the middle attacks could alter user registration details",
+                  "mitigation": " - Use securer communication channels, such as HTTPS, to ensure that data is transmitted safely and discretely\n - Implement hashing or digital signatures to check the integrity of data\n - Validate all incoming data to ensure it hasn't been tampered with",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 68,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -3489,6 +3542,6 @@
     ],
     "diagramTop": 6,
     "reviewer": "",
-    "threatTop": 65
+    "threatTop": 68
   }
 }
