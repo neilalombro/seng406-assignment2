@@ -1330,8 +1330,8 @@
                 "text": "Email Process"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1345,12 +1345,99 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "fa0c703d-26bd-47e0-ac1b-3bf0ff849c42",
+                  "title": "Impersonation",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "An attacker sends fraudulent emails pretending to be from the council or the registration system",
+                  "mitigation": " - Inform users of this possibility, and how to detect phishing emails\n - Use technologies to authenticate legitimate emails\n",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 52,
+                  "score": ""
+                },
+                {
+                  "id": "18810b69-e6cb-4322-b183-adcea1ae579e",
+                  "title": "Attacker alters data",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An attacker alters the content of actual real emails in transit",
+                  "mitigation": " - Use secure protocols to ensure the emails can’t be tampered with in transit\n - Use digital signatures",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 53,
+                  "score": ""
+                },
+                {
+                  "id": "5b7559d0-4593-4ad9-a5c1-087ae87aae10",
+                  "title": "Repudiation threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "A user denies receiving an email, or disputes the content. Or the email system claims to have sent an email when they hadn’t, or fails to admit they sent an email to the wrong address.",
+                  "mitigation": " - Maintain logs of all email communications\n - Use digital signatures\n - Request replies or read receipts for important information",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 54,
+                  "score": ""
+                },
+                {
+                  "id": "4c01b7d7-918a-49b9-90ab-5ac2684abcad",
+                  "title": "Unauthorised access",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Unauthorised access to email content or attachments (such as tag, dog, or owner information)",
+                  "mitigation": " - Use role-based access control to limit access to sensitive data\n - Don't use/provide unnecessary sensitive information throughout \n - Anonymise information where possible to help reduce the impacts if leaked\n - Store sensitive emails and attachments securely",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 55,
+                  "score": ""
+                },
+                {
+                  "id": "c2cd3985-7281-4ec6-b4bd-78a60b71ab89",
+                  "title": "System flooding",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "An attacker floods the email system with large volumes of emails, disrupting the email service",
+                  "mitigation": " - Implement spam filtering solutions\n - Identify an incident response for these cases\n - Limit the number of email sending and recieving\n - Monitor for unusual behaviour or traffic and implement automatic blocking or throttling mechanisms to help\n",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 56,
+                  "score": ""
+                },
+                {
+                  "id": "41e25968-5e01-4ec4-829c-ba403f1ce6fc",
+                  "title": "Attacker gains elevated privileges",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "An attacker gains access to manage/change the email system",
+                  "mitigation": " - Implement the principle of least privilege. Ensure that users and systems have the minimum level of access necessary to perform their functions\n - Conduct regular security audits to identify and fix any vulnerabilities that could allow this\n - Use strong passwords or MFA",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 57,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 1,
+                "repudiation": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 1
+              }
             }
           }
         ]
@@ -2534,6 +2621,6 @@
     ],
     "diagramTop": 6,
     "reviewer": "",
-    "threatTop": 51
+    "threatTop": 57
   }
 }
