@@ -2317,11 +2317,24 @@
                   "new": false,
                   "number": 75,
                   "score": ""
+                },
+                {
+                  "id": "2f47e58e-20a4-4f95-8975-24f19794ea3a",
+                  "title": "Compromised Admin Edits not Traceable",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "A compromised admin account makes edits to data but which account is compromised is unidentifiable",
+                  "mitigation": "Log database operations with the account that made the operation",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 80,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
                 "tampering": 1,
-                "repudiation": 0,
+                "repudiation": 1,
                 "informationDisclosure": 1,
                 "denialOfService": 1
               }
@@ -2341,11 +2354,13 @@
                 "text": "Owner Datastore"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2359,13 +2374,72 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "f1044138-d8da-4a0b-909a-f7a1e23e37d2",
+                  "title": "Unauthorised modification",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "See #73",
+                  "mitigation": "See #73",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 76,
+                  "score": ""
+                },
+                {
+                  "id": "a5a07d99-d0d0-4336-a9eb-aeccdebaf3d1",
+                  "title": "Data leaks",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "See #74",
+                  "mitigation": "See #74",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 78,
+                  "score": ""
+                },
+                {
+                  "id": "009ff231-8502-4cce-94e1-575b60029f13",
+                  "title": "Overloading the System",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "See #75",
+                  "mitigation": "See #75",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 79,
+                  "score": ""
+                },
+                {
+                  "id": "b6101a92-68de-4405-9fa0-0c530a78b3b6",
+                  "title": "Compromised Admin Operations not Traceable",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "See #80",
+                  "mitigation": "See #80",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 85,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 2,
+                "repudiation": 2,
+                "informationDisclosure": 2,
+                "denialOfService": 3
+              }
             }
           },
           {
@@ -3642,6 +3716,6 @@
     ],
     "diagramTop": 6,
     "reviewer": "",
-    "threatTop": 75
+    "threatTop": 85
   }
 }
