@@ -2200,14 +2200,40 @@
                   "new": false,
                   "number": 70,
                   "score": ""
+                },
+                {
+                  "id": "2fbc0a72-963b-414b-8da4-6582f5c7d2a5",
+                  "title": "Unauthorised access to user information",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Third parties steal personal user data such as name, address, and email",
+                  "mitigation": "Store as little personal data as required\nEncrypt personal data\nEnsure limited access to user data",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 71,
+                  "score": ""
+                },
+                {
+                  "id": "aab3181e-eac3-4ef3-bebe-b012ac3ae562",
+                  "title": "Request flooding",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Malicious third parties sending many registration requests in a short amount of time in an attempt to overload the server",
+                  "mitigation": " - Limit the number of registration requests allowed per user or IP address in a given time frame\n - Monitor for unusual behaviour or traffic and implement automatic blocking or throttling mechanisms to help\n - Use load balancers to distribute traffic and handle spikes in requests",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 72,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
                 "spoofing": 1,
                 "tampering": 1,
                 "repudiation": 0,
-                "informationDisclosure": 0,
-                "denialOfService": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 1,
                 "elevationOfPrivilege": 1
               }
             }
@@ -3568,6 +3594,6 @@
     ],
     "diagramTop": 6,
     "reviewer": "",
-    "threatTop": 70
+    "threatTop": 72
   }
 }
