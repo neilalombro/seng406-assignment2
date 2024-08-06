@@ -2174,15 +2174,41 @@
                   "new": false,
                   "number": 68,
                   "score": ""
+                },
+                {
+                  "id": "e2f7cbb0-5a64-4e14-a572-2b470e713f60",
+                  "title": "Gaining Admin Access",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "Attacker gains developer or administrator access to the system, allowing them to access or edit parts of the system they should not be able to",
+                  "mitigation": "Enact the least privilege principle\nEnsure that each level of privilege is secure",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 69,
+                  "score": ""
+                },
+                {
+                  "id": "4654857d-f9a9-4ea3-a434-aa2f7fff7308",
+                  "title": "Impersonation",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "User impersonates someone to register a dog with details that do not belong to them.",
+                  "mitigation": "Send confirmation emails\nUse MFA",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 70,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
-                "spoofing": 0,
+                "spoofing": 1,
                 "tampering": 1,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
-                "elevationOfPrivilege": 0
+                "elevationOfPrivilege": 1
               }
             }
           },
@@ -3542,6 +3568,6 @@
     ],
     "diagramTop": 6,
     "reviewer": "",
-    "threatTop": 68
+    "threatTop": 70
   }
 }
