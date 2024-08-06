@@ -2252,11 +2252,13 @@
                 "text": "Dog Datastore"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2270,13 +2272,59 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "4d0bb773-24fa-4405-8c85-23854f929d3b",
+                  "title": "Unauthorised modification",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Editing user or dog data without permission",
+                  "mitigation": "Only allow people with Admin permissions to edit data",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 73,
+                  "score": ""
+                },
+                {
+                  "id": "b97a66f8-3e3a-437a-b920-03b67757df95",
+                  "title": "Data leaks",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Third parties getting access to data they should not have access",
+                  "mitigation": "Ensure extra permissions to access user data\nStore bare minimum data \nEncrypt sensitive data",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 74,
+                  "score": ""
+                },
+                {
+                  "id": "7090cf9f-eb43-46f8-b20f-02e14cfd7354",
+                  "title": "Overloading system ",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Sending a large number of database access/manipulation requests in a short time in order to overload the server and affect intended functionality",
+                  "mitigation": "Add rate limiting\nEnsure only a certain number of requests per IP address per unit time",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 75,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 1
+              }
             }
           },
           {
@@ -3594,6 +3642,6 @@
     ],
     "diagramTop": 6,
     "reviewer": "",
-    "threatTop": 72
+    "threatTop": 75
   }
 }
