@@ -1558,8 +1558,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "f0f41188-fd2e-43f1-a50e-08c643c531aa",
             "zIndex": 1,
+            "id": "f0f41188-fd2e-43f1-a50e-08c643c531aa",
             "data": {
               "type": "tm.Actor",
               "name": "Dog owner",
@@ -1568,7 +1568,38 @@
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "b8a8267e-c455-4ac8-9c6c-1ea6b0cc1c6e",
+                  "title": "Impersonating a dog owner",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Actor can enter an email address that is not theirs.",
+                  "mitigation": "Request two-factor authentication before being able to report a lost dog.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 139,
+                  "score": ""
+                },
+                {
+                  "id": "e7aeb1a9-39fb-48f8-936f-5c56cedfa2c3",
+                  "title": "Repudiation of lost dog report",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "A dog owner (or someone impersonating as a dog owner) may \n- say they never reported their dog lost and the system says the dog has a lost status\n- or say they have reported their dog and the system says the dog is not lost",
+                  "mitigation": "- Logging all changes to a dog status with timestamps",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 140,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 2
+              }
             }
           },
           {
@@ -1592,8 +1623,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "e1e745d5-adde-4347-8e15-47aa59b79b84",
             "zIndex": 2,
+            "id": "e1e745d5-adde-4347-8e15-47aa59b79b84",
             "data": {
               "type": "tm.Process",
               "name": "Report lost dog",
@@ -1629,8 +1660,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "afd5c837-348e-4c45-a9fa-b70c4b0d2f6f",
             "zIndex": 3,
+            "id": "afd5c837-348e-4c45-a9fa-b70c4b0d2f6f",
             "data": {
               "type": "tm.Process",
               "name": "Confirmation email",
@@ -1669,8 +1700,8 @@
             },
             "visible": true,
             "shape": "store",
-            "id": "e928eaa2-49f0-457b-b62f-114619fb2cdc",
             "zIndex": 4,
+            "id": "e928eaa2-49f0-457b-b62f-114619fb2cdc",
             "data": {
               "type": "tm.Store",
               "name": "Dog datastore",
@@ -1718,15 +1749,15 @@
               "threats": []
             },
             "id": "f1997bfc-944a-4c68-b124-ac16dc18e30a",
+            "labels": [
+              "Dog tag ID"
+            ],
             "source": {
               "cell": "e1e745d5-adde-4347-8e15-47aa59b79b84"
             },
             "target": {
               "cell": "f0f41188-fd2e-43f1-a50e-08c643c531aa"
             },
-            "labels": [
-              "Dog tag ID"
-            ],
             "vertices": [
               {
                 "x": 440,
@@ -1770,6 +1801,9 @@
               "threats": []
             },
             "id": "8a5839c6-1342-456c-80a1-99781a4cdc56",
+            "labels": [
+              "Dog tag ID and lost status"
+            ],
             "source": {
               "cell": "e928eaa2-49f0-457b-b62f-114619fb2cdc"
             },
@@ -1781,9 +1815,6 @@
                 "x": 860,
                 "y": 330
               }
-            ],
-            "labels": [
-              "Dog tag ID and lost status"
             ]
           },
           {
@@ -1818,6 +1849,9 @@
               "threats": []
             },
             "id": "994430f4-1f33-4c11-9641-7e5adb91f38e",
+            "labels": [
+              "Dog tag ID and lost status"
+            ],
             "source": {
               "cell": "afd5c837-348e-4c45-a9fa-b70c4b0d2f6f"
             },
@@ -1829,9 +1863,6 @@
                 "x": 450,
                 "y": 386.5
               }
-            ],
-            "labels": [
-              "Dog tag ID and lost status"
             ]
           },
           {
@@ -1866,6 +1897,9 @@
               "threats": []
             },
             "id": "cdce090e-2475-4494-823d-2984d54484b2",
+            "labels": [
+              "Dog lost status"
+            ],
             "source": {
               "cell": "e1e745d5-adde-4347-8e15-47aa59b79b84"
             },
@@ -1877,9 +1911,6 @@
                 "x": 480,
                 "y": 330
               }
-            ],
-            "labels": [
-              "Dog lost status"
             ]
           },
           {
@@ -1914,6 +1945,9 @@
               "threats": []
             },
             "id": "bca36198-e4b9-4f6e-b803-7407d6306feb",
+            "labels": [
+              "Dog name"
+            ],
             "source": {
               "cell": "f0f41188-fd2e-43f1-a50e-08c643c531aa"
             },
@@ -1929,9 +1963,6 @@
                 "x": 330,
                 "y": 270
               }
-            ],
-            "labels": [
-              "Dog name"
             ]
           },
           {
@@ -1966,6 +1997,9 @@
               "threats": []
             },
             "id": "29308b80-1184-4ac3-8c2f-3f7fcdde73be",
+            "labels": [
+              "Email"
+            ],
             "source": {
               "cell": "f0f41188-fd2e-43f1-a50e-08c643c531aa"
             },
@@ -1985,9 +2019,6 @@
                 "x": 329,
                 "y": 230
               }
-            ],
-            "labels": [
-              "Email"
             ]
           },
           {
@@ -2135,8 +2166,8 @@
             },
             "visible": true,
             "shape": "td-text-block",
-            "id": "413fe724-8c1d-4149-a1f7-e227275bc86e",
             "zIndex": 11,
+            "id": "413fe724-8c1d-4149-a1f7-e227275bc86e",
             "data": {
               "type": "tm.Text",
               "name": "Council trust boundary",
@@ -4968,6 +4999,6 @@
     ],
     "diagramTop": 6,
     "reviewer": "",
-    "threatTop": 138
+    "threatTop": 140
   }
 }
