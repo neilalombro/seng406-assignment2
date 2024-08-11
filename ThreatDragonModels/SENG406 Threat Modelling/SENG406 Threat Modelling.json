@@ -1539,8 +1539,8 @@
         "cells": [
           {
             "position": {
-              "x": 190,
-              "y": 350
+              "x": 140,
+              "y": 340
             },
             "size": {
               "width": 112.5,
@@ -2089,6 +2089,59 @@
                 "y": 100
               }
             ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "a3a11db5-ae0e-4b3f-8e21-8614bf12de15",
+            "source": {
+              "x": 340,
+              "y": 30
+            },
+            "target": {
+              "x": 1030,
+              "y": 400
+            },
+            "vertices": [
+              {
+                "x": 620,
+                "y": 460
+              }
+            ]
+          },
+          {
+            "position": {
+              "x": 1060,
+              "y": 370
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Council trust boundary"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "413fe724-8c1d-4149-a1f7-e227275bc86e",
+            "zIndex": 11,
+            "data": {
+              "type": "tm.Text",
+              "name": "Council trust boundary",
+              "hasOpenThreats": false
+            }
           }
         ]
       },
