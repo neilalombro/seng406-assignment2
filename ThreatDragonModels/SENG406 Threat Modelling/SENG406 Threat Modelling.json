@@ -2282,6 +2282,9 @@
               "threats": []
             },
             "id": "bf2f47ca-7267-4929-8b7d-a760c40a7eb8",
+            "labels": [
+              "Dog tag ID"
+            ],
             "source": {
               "cell": "cc5a7189-e542-4084-953c-e3cb9be01686"
             },
@@ -2293,10 +2296,48 @@
                 "x": 1090,
                 "y": 70
               }
-            ],
-            "labels": [
-              "Dog tag ID"
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "66812c9c-3818-4f2c-bcc2-e8ee0c9942c9",
+            "source": {
+              "x": 1226,
+              "y": 280
+            },
+            "target": {
+              "x": 1326,
+              "y": 380
+            }
           },
           {
             "position": {
