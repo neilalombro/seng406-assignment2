@@ -1678,8 +1678,8 @@
           },
           {
             "position": {
-              "x": 1056.25,
-              "y": 140
+              "x": 1210,
+              "y": 110
             },
             "size": {
               "width": 120,
@@ -2134,6 +2134,9 @@
               "threats": []
             },
             "id": "fcc55547-f346-4612-ad50-5eba520cb555",
+            "labels": [
+              "Dog name"
+            ],
             "source": {
               "cell": "e1e745d5-adde-4347-8e15-47aa59b79b84"
             },
@@ -2145,9 +2148,6 @@
                 "x": 670,
                 "y": 112.5
               }
-            ],
-            "labels": [
-              "Dog name"
             ]
           },
           {
@@ -2234,6 +2234,9 @@
               "threats": []
             },
             "id": "754ea200-5e26-443c-985c-728f53736f85",
+            "labels": [
+              "Dog tag ID"
+            ],
             "source": {
               "cell": "cc5a7189-e542-4084-953c-e3cb9be01686"
             },
@@ -2244,6 +2247,51 @@
               {
                 "x": 730,
                 "y": 180
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Dog tag ID",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "bf2f47ca-7267-4929-8b7d-a760c40a7eb8",
+            "source": {
+              "cell": "cc5a7189-e542-4084-953c-e3cb9be01686"
+            },
+            "target": {
+              "cell": "e928eaa2-49f0-457b-b62f-114619fb2cdc"
+            },
+            "vertices": [
+              {
+                "x": 1090,
+                "y": 70
               }
             ],
             "labels": [
@@ -2295,8 +2343,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "cc5a7189-e542-4084-953c-e3cb9be01686",
             "zIndex": 12,
+            "id": "cc5a7189-e542-4084-953c-e3cb9be01686",
             "data": {
               "type": "tm.Process",
               "name": "Update dog lost status",
