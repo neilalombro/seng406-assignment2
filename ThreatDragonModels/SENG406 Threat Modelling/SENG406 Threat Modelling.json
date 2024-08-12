@@ -1539,6 +1539,31 @@
         "cells": [
           {
             "position": {
+              "x": 440,
+              "y": 510
+            },
+            "size": {
+              "width": 170,
+              "height": 130
+            },
+            "shape": "trust-boundary-box",
+            "attrs": {
+              "headerText": {
+                "text": "Emailing service"
+              }
+            },
+            "id": "ba05af9c-a9e7-472c-b5a1-15346d0f3b13",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Emailing service",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
               "x": 140,
               "y": 340
             },
@@ -1641,8 +1666,8 @@
           },
           {
             "position": {
-              "x": 580,
-              "y": 315
+              "x": 650,
+              "y": 305
             },
             "size": {
               "width": 190,
@@ -2188,6 +2213,10 @@
             },
             "vertices": [
               {
+                "x": 940,
+                "y": 260
+              },
+              {
                 "x": 860,
                 "y": 330
               }
@@ -2201,7 +2230,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "",
+              "name": "City Council Maintainer",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
@@ -2219,7 +2248,14 @@
               {
                 "x": 600,
                 "y": 420
+              },
+              {
+                "x": 850,
+                "y": 470
               }
+            ],
+            "labels": [
+              "City Council Maintainer"
             ]
           },
           {
@@ -2230,7 +2266,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "",
+              "name": "Unauthorised",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
@@ -2248,7 +2284,14 @@
               {
                 "x": 480,
                 "y": 420
+              },
+              {
+                "x": 880,
+                "y": 540
               }
+            ],
+            "labels": [
+              "Unauthorised"
             ]
           },
           {
@@ -2314,26 +2357,39 @@
           },
           {
             "position": {
-              "x": 970,
-              "y": 510
+              "x": 460,
+              "y": 540
             },
             "size": {
-              "width": 112.5,
-              "height": 60
+              "width": 130,
+              "height": 80
             },
             "attrs": {
               "text": {
-                "text": "Unauthorised"
+                "text": "Send email"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
               }
             },
             "visible": true,
-            "shape": "td-text-block",
-            "id": "4b1bc1fd-a5d5-482f-a332-3fc8667b5f83",
-            "zIndex": 13,
+            "shape": "process",
+            "id": "e35994d2-5b35-4510-8619-86f44efd89cd",
+            "zIndex": 14,
             "data": {
-              "type": "tm.Text",
-              "name": "Unauthorised",
-              "hasOpenThreats": false
+              "type": "tm.Process",
+              "name": "Send email",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
             }
           }
         ]
