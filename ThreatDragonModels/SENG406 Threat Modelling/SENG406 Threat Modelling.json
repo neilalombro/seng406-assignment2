@@ -1552,8 +1552,8 @@
                 "text": "Emailing service"
               }
             },
-            "id": "ba05af9c-a9e7-472c-b5a1-15346d0f3b13",
             "zIndex": -1,
+            "id": "ba05af9c-a9e7-472c-b5a1-15346d0f3b13",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Emailing service",
@@ -2236,6 +2236,9 @@
               "hasOpenThreats": false
             },
             "id": "a3a11db5-ae0e-4b3f-8e21-8614bf12de15",
+            "labels": [
+              "City Council Maintainer"
+            ],
             "source": {
               "x": 640,
               "y": 20
@@ -2253,9 +2256,6 @@
                 "x": 850,
                 "y": 470
               }
-            ],
-            "labels": [
-              "City Council Maintainer"
             ]
           },
           {
@@ -2272,6 +2272,9 @@
               "hasOpenThreats": false
             },
             "id": "17c0d8d1-1cf3-4c12-b7d5-917cca5068a4",
+            "labels": [
+              "Unauthorised"
+            ],
             "source": {
               "x": 400,
               "y": 10
@@ -2289,9 +2292,6 @@
                 "x": 880,
                 "y": 540
               }
-            ],
-            "labels": [
-              "Unauthorised"
             ]
           },
           {
@@ -2376,8 +2376,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "e35994d2-5b35-4510-8619-86f44efd89cd",
             "zIndex": 14,
+            "id": "e35994d2-5b35-4510-8619-86f44efd89cd",
             "data": {
               "type": "tm.Process",
               "name": "Send email",
