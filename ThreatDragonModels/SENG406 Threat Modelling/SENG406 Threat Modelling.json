@@ -2251,7 +2251,7 @@
             "data": {
               "type": "tm.Process",
               "name": "Report lost dog",
-              "description": "",
+              "description": "Form where a user can report their dog lost. Made available publicly on the council website.",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": true,
@@ -2569,58 +2569,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Dog information",
-              "description": "Dog's last known tag ID and lost status",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "cdce090e-2475-4494-823d-2984d54484b2",
-            "labels": [
-              "Dog information"
-            ],
-            "source": {
-              "cell": "e1e745d5-adde-4347-8e15-47aa59b79b84"
-            },
-            "target": {
-              "cell": "f0f41188-fd2e-43f1-a50e-08c643c531aa"
-            },
-            "vertices": [
-              {
-                "x": 450,
-                "y": 300
-              },
-              {
-                "x": 410,
-                "y": 330
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Dog name",
               "description": "",
               "outOfScope": false,
@@ -2644,8 +2592,8 @@
             },
             "vertices": [
               {
-                "x": 290,
-                "y": 310
+                "x": 280,
+                "y": 300
               },
               {
                 "x": 330,
@@ -2770,110 +2718,6 @@
                   "name": "block"
                 },
                 "sourceMarker": {
-                  "name": "block"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Dog information",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": true,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "bf2f47ca-7267-4929-8b7d-a760c40a7eb8",
-            "labels": [
-              "Dog information"
-            ],
-            "source": {
-              "cell": "cc5a7189-e542-4084-953c-e3cb9be01686"
-            },
-            "target": {
-              "cell": "e928eaa2-49f0-457b-b62f-114619fb2cdc"
-            },
-            "vertices": [
-              {
-                "x": 1090,
-                "y": 70
-              },
-              {
-                "x": 1160,
-                "y": 70
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Dog information",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "8a5839c6-1342-456c-80a1-99781a4cdc56",
-            "labels": [
-              "Dog information"
-            ],
-            "source": {
-              "cell": "cc5a7189-e542-4084-953c-e3cb9be01686"
-            },
-            "target": {
-              "cell": "afd5c837-348e-4c45-a9fa-b70c4b0d2f6f"
-            },
-            "vertices": [
-              {
-                "x": 940,
-                "y": 260
-              },
-              {
-                "x": 860,
-                "y": 330
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
                   "name": ""
                 },
                 "strokeDasharray": null
@@ -2897,6 +2741,9 @@
               "threats": []
             },
             "id": "3fee8ccd-37ff-4ba9-9d32-c670d481048d",
+            "labels": [
+              "Email"
+            ],
             "source": {
               "cell": "cc5a7189-e542-4084-953c-e3cb9be01686"
             },
@@ -2912,9 +2759,6 @@
                 "x": 1140,
                 "y": 260
               }
-            ],
-            "labels": [
-              "Email"
             ]
           },
           {
@@ -3005,6 +2849,9 @@
               "threats": []
             },
             "id": "fc6fcca6-9a03-411a-a5fd-75717b8329e6",
+            "labels": [
+              "Email"
+            ],
             "source": {
               "cell": "cc5a7189-e542-4084-953c-e3cb9be01686"
             },
@@ -3016,9 +2863,126 @@
                 "x": 870,
                 "y": 260
               }
-            ],
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Dog name",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "fcc55547-f346-4612-ad50-5eba520cb555",
             "labels": [
-              "Email"
+              "Dog name"
+            ],
+            "source": {
+              "cell": "e1e745d5-adde-4347-8e15-47aa59b79b84"
+            },
+            "target": {
+              "cell": "cc5a7189-e542-4084-953c-e3cb9be01686"
+            },
+            "vertices": [
+              {
+                "x": 670,
+                "y": 112.5
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "City Council Maintainer",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "a3a11db5-ae0e-4b3f-8e21-8614bf12de15",
+            "labels": [
+              "City Council Maintainer"
+            ],
+            "source": {
+              "x": 640,
+              "y": 20
+            },
+            "target": {
+              "x": 1460,
+              "y": 440
+            },
+            "vertices": [
+              {
+                "x": 600,
+                "y": 420
+              },
+              {
+                "x": 850,
+                "y": 470
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Unauthorised",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "17c0d8d1-1cf3-4c12-b7d5-917cca5068a4",
+            "labels": [
+              "Unauthorised"
+            ],
+            "source": {
+              "x": 400,
+              "y": 10
+            },
+            "target": {
+              "x": 1470,
+              "y": 440
+            },
+            "vertices": [
+              {
+                "x": 480,
+                "y": 420
+              },
+              {
+                "x": 850,
+                "y": 510
+              }
             ]
           },
           {
@@ -3068,7 +3032,7 @@
                 "y": 180
               },
               {
-                "x": 730,
+                "x": 710,
                 "y": 180
               }
             ]
@@ -3093,7 +3057,107 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Dog name",
+              "name": "Dog information",
+              "description": "Dog's last known tag ID and lost status",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "cdce090e-2475-4494-823d-2984d54484b2",
+            "labels": [
+              "Dog information"
+            ],
+            "source": {
+              "cell": "e1e745d5-adde-4347-8e15-47aa59b79b84"
+            },
+            "target": {
+              "cell": "f0f41188-fd2e-43f1-a50e-08c643c531aa"
+            },
+            "vertices": [
+              {
+                "x": 450,
+                "y": 300
+              },
+              {
+                "x": 410,
+                "y": 330
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Dog information",
+              "description": "Dog's last known tag ID and lost status",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "4422885f-01fa-4cd3-b9da-09241787b46f",
+            "labels": [
+              "Dog information"
+            ],
+            "source": {
+              "cell": "e35994d2-5b35-4510-8619-86f44efd89cd"
+            },
+            "target": {
+              "cell": "f0f41188-fd2e-43f1-a50e-08c643c531aa"
+            },
+            "vertices": [
+              {
+                "x": 280,
+                "y": 630
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Email",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -3104,20 +3168,20 @@
               "protocol": "",
               "threats": []
             },
-            "id": "fcc55547-f346-4612-ad50-5eba520cb555",
+            "id": "cf6276ee-0608-4e78-9ef9-cacfc4fd300c",
             "labels": [
-              "Dog name"
+              "Email"
             ],
             "source": {
-              "cell": "e1e745d5-adde-4347-8e15-47aa59b79b84"
+              "cell": "afd5c837-348e-4c45-a9fa-b70c4b0d2f6f"
             },
             "target": {
-              "cell": "cc5a7189-e542-4084-953c-e3cb9be01686"
+              "cell": "e35994d2-5b35-4510-8619-86f44efd89cd"
             },
             "vertices": [
               {
-                "x": 670,
-                "y": 112.5
+                "x": 790,
+                "y": 670
               }
             ]
           },
@@ -3193,8 +3257,8 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Email",
-              "description": "",
+              "name": "Dog information",
+              "description": "Dog's last known tag ID and lost status",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
@@ -3204,21 +3268,25 @@
               "protocol": "",
               "threats": []
             },
-            "id": "cf6276ee-0608-4e78-9ef9-cacfc4fd300c",
+            "id": "8a5839c6-1342-456c-80a1-99781a4cdc56",
+            "labels": [
+              "Dog information"
+            ],
             "source": {
-              "cell": "afd5c837-348e-4c45-a9fa-b70c4b0d2f6f"
+              "cell": "cc5a7189-e542-4084-953c-e3cb9be01686"
             },
             "target": {
-              "cell": "e35994d2-5b35-4510-8619-86f44efd89cd"
+              "cell": "afd5c837-348e-4c45-a9fa-b70c4b0d2f6f"
             },
             "vertices": [
               {
-                "x": 790,
-                "y": 670
+                "x": 940,
+                "y": 260
+              },
+              {
+                "x": 860,
+                "y": 330
               }
-            ],
-            "labels": [
-              "Email"
             ]
           },
           {
@@ -3230,7 +3298,7 @@
                   "name": "block"
                 },
                 "sourceMarker": {
-                  "name": ""
+                  "name": "block"
                 },
                 "strokeDasharray": null
               }
@@ -3246,98 +3314,30 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
-              "isBidirectional": false,
+              "isBidirectional": true,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
               "threats": []
             },
-            "id": "4422885f-01fa-4cd3-b9da-09241787b46f",
-            "source": {
-              "cell": "e35994d2-5b35-4510-8619-86f44efd89cd"
-            },
-            "target": {
-              "cell": "f0f41188-fd2e-43f1-a50e-08c643c531aa"
-            },
-            "vertices": [
-              {
-                "x": 280,
-                "y": 630
-              }
-            ],
+            "id": "bf2f47ca-7267-4929-8b7d-a760c40a7eb8",
             "labels": [
               "Dog information"
-            ]
-          },
-          {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "City Council Maintainer",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            },
-            "id": "a3a11db5-ae0e-4b3f-8e21-8614bf12de15",
-            "labels": [
-              "City Council Maintainer"
             ],
             "source": {
-              "x": 640,
-              "y": 20
+              "cell": "cc5a7189-e542-4084-953c-e3cb9be01686"
             },
             "target": {
-              "x": 1460,
-              "y": 440
+              "cell": "e928eaa2-49f0-457b-b62f-114619fb2cdc"
             },
             "vertices": [
               {
-                "x": 600,
-                "y": 420
+                "x": 1090,
+                "y": 70
               },
               {
-                "x": 850,
-                "y": 470
-              }
-            ]
-          },
-          {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "Unauthorised",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            },
-            "id": "17c0d8d1-1cf3-4c12-b7d5-917cca5068a4",
-            "labels": [
-              "Unauthorised"
-            ],
-            "source": {
-              "x": 400,
-              "y": 10
-            },
-            "target": {
-              "x": 1470,
-              "y": 440
-            },
-            "vertices": [
-              {
-                "x": 480,
-                "y": 420
-              },
-              {
-                "x": 850,
-                "y": 510
+                "x": 1160,
+                "y": 70
               }
             ]
           },
@@ -3550,8 +3550,8 @@
             },
             "visible": true,
             "shape": "store",
-            "id": "3b273c44-8d17-4a56-b5ec-7be63ac8c29c",
             "zIndex": 15,
+            "id": "3b273c44-8d17-4a56-b5ec-7be63ac8c29c",
             "data": {
               "type": "tm.Store",
               "name": "Owner datastore",
