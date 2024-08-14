@@ -2137,31 +2137,6 @@
         "cells": [
           {
             "position": {
-              "x": 430,
-              "y": 635
-            },
-            "size": {
-              "width": 170,
-              "height": 130
-            },
-            "shape": "trust-boundary-box",
-            "attrs": {
-              "headerText": {
-                "text": "Emailing service"
-              }
-            },
-            "zIndex": -1,
-            "id": "ba05af9c-a9e7-472c-b5a1-15346d0f3b13",
-            "data": {
-              "type": "tm.BoundaryBox",
-              "name": "Emailing service",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            }
-          },
-          {
-            "position": {
               "x": 140,
               "y": 340
             },
@@ -2338,8 +2313,8 @@
           },
           {
             "position": {
-              "x": 650,
-              "y": 305
+              "x": 815,
+              "y": 260
             },
             "size": {
               "width": 190,
@@ -2550,370 +2525,6 @@
             }
           },
           {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Dog name",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "bca36198-e4b9-4f6e-b803-7407d6306feb",
-            "labels": [
-              "Dog name"
-            ],
-            "source": {
-              "cell": "f0f41188-fd2e-43f1-a50e-08c643c531aa"
-            },
-            "target": {
-              "cell": "e1e745d5-adde-4347-8e15-47aa59b79b84"
-            },
-            "vertices": [
-              {
-                "x": 280,
-                "y": 300
-              },
-              {
-                "x": 330,
-                "y": 270
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Email",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "29308b80-1184-4ac3-8c2f-3f7fcdde73be",
-            "labels": [
-              "Email"
-            ],
-            "source": {
-              "cell": "f0f41188-fd2e-43f1-a50e-08c643c531aa"
-            },
-            "target": {
-              "cell": "e1e745d5-adde-4347-8e15-47aa59b79b84"
-            },
-            "vertices": [
-              {
-                "x": 270,
-                "y": 270
-              },
-              {
-                "x": 310,
-                "y": 230
-              },
-              {
-                "x": 329,
-                "y": 230
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Email",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "2a199226-8ed3-4197-afea-25ffd74f00b9",
-            "labels": [
-              "Email"
-            ],
-            "source": {
-              "cell": "e1e745d5-adde-4347-8e15-47aa59b79b84"
-            },
-            "target": {
-              "cell": "cc5a7189-e542-4084-953c-e3cb9be01686"
-            },
-            "vertices": [
-              {
-                "x": 610,
-                "y": 120
-              },
-              {
-                "x": 680,
-                "y": 80
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Email",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "3fee8ccd-37ff-4ba9-9d32-c670d481048d",
-            "labels": [
-              "Email"
-            ],
-            "source": {
-              "cell": "cc5a7189-e542-4084-953c-e3cb9be01686"
-            },
-            "target": {
-              "cell": "3b273c44-8d17-4a56-b5ec-7be63ac8c29c"
-            },
-            "vertices": [
-              {
-                "x": 1070,
-                "y": 230
-              },
-              {
-                "x": 1140,
-                "y": 260
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Owner matching email",
-              "description": "Boolean that informs the updating of dog lost status if the email the user entered matches the owner. Assuming that Dog datastore has a foreign key for a dog's owner.",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "8783d045-9dd8-4e5f-b277-85b9634bc02d",
-            "labels": [
-              "Owner matching email"
-            ],
-            "source": {
-              "cell": "3b273c44-8d17-4a56-b5ec-7be63ac8c29c"
-            },
-            "target": {
-              "cell": "cc5a7189-e542-4084-953c-e3cb9be01686"
-            },
-            "vertices": [
-              {
-                "x": 1180,
-                "y": 200
-              },
-              {
-                "x": 1120,
-                "y": 170
-              },
-              {
-                "x": 1050,
-                "y": 150
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Email",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "fc6fcca6-9a03-411a-a5fd-75717b8329e6",
-            "labels": [
-              "Email"
-            ],
-            "source": {
-              "cell": "cc5a7189-e542-4084-953c-e3cb9be01686"
-            },
-            "target": {
-              "cell": "afd5c837-348e-4c45-a9fa-b70c4b0d2f6f"
-            },
-            "vertices": [
-              {
-                "x": 870,
-                "y": 260
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Dog name",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "fcc55547-f346-4612-ad50-5eba520cb555",
-            "labels": [
-              "Dog name"
-            ],
-            "source": {
-              "cell": "e1e745d5-adde-4347-8e15-47aa59b79b84"
-            },
-            "target": {
-              "cell": "cc5a7189-e542-4084-953c-e3cb9be01686"
-            },
-            "vertices": [
-              {
-                "x": 670,
-                "y": 112.5
-              }
-            ]
-          },
-          {
             "shape": "trust-boundary-curve",
             "width": 200,
             "height": 100,
@@ -2989,7 +2600,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -3009,12 +2621,57 @@
               "description": "Dog's last known tag ID and lost status",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "18877745-ba4b-4df1-9b66-19dc741d1e0e",
+                  "title": "Unauthorized modification of dog information",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "See threat #239",
+                  "mitigation": "See threat #239",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 240,
+                  "score": ""
+                },
+                {
+                  "id": "6d9431d0-dd97-47a3-96a8-8aeb499d4ce5",
+                  "title": "Insecure updating of lost dog status",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "If updating the lost dog status that returns the lost dog tag ID has weak access control, then those who should not have access to a dog’s last known tag ID and/or lost status can have this information",
+                  "mitigation": "Implement authentication and authorization on endpoint\nLimit data exposed in API call return",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 241,
+                  "score": ""
+                },
+                {
+                  "id": "ce5fe59c-e1a1-416c-a15f-10d26462d109",
+                  "title": "Flooding of requests from same IP",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "See Threat #220",
+                  "mitigation": "See Threat #220",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 242,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 1
+              }
             },
             "id": "754ea200-5e26-443c-985c-728f53736f85",
             "labels": [
@@ -3041,7 +2698,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -3061,12 +2719,44 @@
               "description": "Dog's last known tag ID and lost status",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "30bb856b-970d-4201-a933-e55d860fe288",
+                  "title": "Unauthorized modification of dog information",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "See threat #239",
+                  "mitigation": "See threat #239",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 244,
+                  "score": ""
+                },
+                {
+                  "id": "feb0c924-523f-4a48-b97c-403597d32d7e",
+                  "title": "Flooding of requests from same IP",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "See Threat #220",
+                  "mitigation": "See Threat #220",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 245,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 1
+              }
             },
             "id": "cdce090e-2475-4494-823d-2984d54484b2",
             "labels": [
@@ -3084,8 +2774,8 @@
                 "y": 300
               },
               {
-                "x": 410,
-                "y": 330
+                "x": 340,
+                "y": 350
               }
             ]
           },
@@ -3093,7 +2783,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -3113,27 +2804,59 @@
               "description": "Dog's last known tag ID and lost status",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "fcd7e400-8f8b-42a2-9d19-34592e219b4d",
+                  "title": "Unauthorized modification of dog information",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "See threat #239",
+                  "mitigation": "See threat #239",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 248,
+                  "score": ""
+                },
+                {
+                  "id": "e1ec69f4-b937-4544-9227-ab161ad32728",
+                  "title": "Flooding of requests from same IP",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "See Threat #220",
+                  "mitigation": "See Threat #220",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 249,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 1
+              }
             },
             "id": "4422885f-01fa-4cd3-b9da-09241787b46f",
             "labels": [
               "Dog information"
             ],
             "source": {
-              "cell": "e35994d2-5b35-4510-8619-86f44efd89cd"
+              "cell": "afd5c837-348e-4c45-a9fa-b70c4b0d2f6f"
             },
             "target": {
               "cell": "f0f41188-fd2e-43f1-a50e-08c643c531aa"
             },
             "vertices": [
               {
-                "x": 280,
-                "y": 630
+                "x": 410,
+                "y": 420
               }
             ]
           },
@@ -3141,7 +2864,169 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Dog information",
+              "description": "Dog's last known tag ID and lost status",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "1fbb191f-e68c-4f45-be06-460f8f1f6dce",
+                  "title": "Flooding of requests from same IP",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "See Threat #220",
+                  "mitigation": "See Threat #220",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 247,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 1
+              }
+            },
+            "id": "8a5839c6-1342-456c-80a1-99781a4cdc56",
+            "labels": [
+              "Dog information"
+            ],
+            "source": {
+              "cell": "cc5a7189-e542-4084-953c-e3cb9be01686"
+            },
+            "target": {
+              "cell": "afd5c837-348e-4c45-a9fa-b70c4b0d2f6f"
+            },
+            "vertices": [
+              {
+                "x": 960,
+                "y": 210
+              },
+              {
+                "x": 960,
+                "y": 250
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Dog information",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "8ecbbb85-ea9e-4da0-8861-4c5069fa1ae3",
+                  "title": "Unauthorized modification of dog information",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "A man-in-the-middle could change a dog’s last known tag ID and/or lost status while in transit leading to misinformation in the email.",
+                  "mitigation": "Encrypt data in transit\nValidate and sanitize inputs\nStrong access controls",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 239,
+                  "score": ""
+                },
+                {
+                  "id": "d02a0348-1e78-4949-abf0-3b1c3bd01c84",
+                  "title": "Flooding of requests from same IP",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "See Threat #220",
+                  "mitigation": "See Threat #220",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 243,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 1
+              }
+            },
+            "id": "bf2f47ca-7267-4929-8b7d-a760c40a7eb8",
+            "labels": [
+              "Dog information"
+            ],
+            "source": {
+              "cell": "cc5a7189-e542-4084-953c-e3cb9be01686"
+            },
+            "target": {
+              "cell": "e928eaa2-49f0-457b-b62f-114619fb2cdc"
+            },
+            "vertices": [
+              {
+                "x": 1070,
+                "y": 70
+              },
+              {
+                "x": 1160,
+                "y": 70
+              },
+              {
+                "x": 1220,
+                "y": 100
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -3161,27 +3046,80 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "83091454-c0b2-4e5c-8e0a-e8b37f62375f",
+                  "title": "Email changed to report lost dog",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "A man-in-the-middle could change emails in transit. This could lead to valid lost dog report requests not being correctly processed.",
+                  "mitigation": "Encrypt data during transmission\nImplement digital signatures to ensure data integrity\n",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 250,
+                  "score": ""
+                },
+                {
+                  "id": "d06fbafd-6c12-44d9-9cc6-2cbc08c66d5b",
+                  "title": "Plain emails captured ",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Emails in plain text could be captured through transmission and used maliciously.",
+                  "mitigation": "Store email addresses in encrypted form in the database and in logs.\nEncrypt data in transmission",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 254,
+                  "score": ""
+                },
+                {
+                  "id": "3e47cf86-4d46-41c8-a986-7355aa8726a5",
+                  "title": "Flooding of requests from same IP",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "See Threat #220",
+                  "mitigation": "See Threat #220",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 258,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 1
+              }
             },
-            "id": "cf6276ee-0608-4e78-9ef9-cacfc4fd300c",
+            "id": "29308b80-1184-4ac3-8c2f-3f7fcdde73be",
             "labels": [
               "Email"
             ],
             "source": {
-              "cell": "afd5c837-348e-4c45-a9fa-b70c4b0d2f6f"
+              "cell": "f0f41188-fd2e-43f1-a50e-08c643c531aa"
             },
             "target": {
-              "cell": "e35994d2-5b35-4510-8619-86f44efd89cd"
+              "cell": "e1e745d5-adde-4347-8e15-47aa59b79b84"
             },
             "vertices": [
               {
-                "x": 790,
-                "y": 670
+                "x": 270,
+                "y": 270
+              },
+              {
+                "x": 310,
+                "y": 230
+              },
+              {
+                "x": 329,
+                "y": 230
               }
             ]
           },
@@ -3189,7 +3127,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -3205,139 +3144,566 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Dog information",
-              "description": "Dog's last known tag ID and lost status",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "994430f4-1f33-4c11-9641-7e5adb91f38e",
-            "labels": [
-              "Dog information"
-            ],
-            "source": {
-              "cell": "afd5c837-348e-4c45-a9fa-b70c4b0d2f6f"
-            },
-            "target": {
-              "cell": "e35994d2-5b35-4510-8619-86f44efd89cd"
-            },
-            "vertices": [
-              {
-                "x": 730,
-                "y": 540
-              },
-              {
-                "x": 690,
-                "y": 620
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Dog information",
-              "description": "Dog's last known tag ID and lost status",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "8a5839c6-1342-456c-80a1-99781a4cdc56",
-            "labels": [
-              "Dog information"
-            ],
-            "source": {
-              "cell": "cc5a7189-e542-4084-953c-e3cb9be01686"
-            },
-            "target": {
-              "cell": "afd5c837-348e-4c45-a9fa-b70c4b0d2f6f"
-            },
-            "vertices": [
-              {
-                "x": 940,
-                "y": 260
-              },
-              {
-                "x": 860,
-                "y": 330
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": "block"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Dog information",
+              "name": "Email",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": true,
+              "hasOpenThreats": true,
+              "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "2c5740e6-75ee-4db9-8f11-e9a46f4a018c",
+                  "title": "Email changed to report lost dog",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "See threat #250",
+                  "mitigation": "See threat #250",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 251,
+                  "score": ""
+                },
+                {
+                  "id": "ec64e342-2367-424a-bb3d-95287a9c5e5f",
+                  "title": "Plain emails captured ",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "See threat #254",
+                  "mitigation": "See threat #254",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 255,
+                  "score": ""
+                },
+                {
+                  "id": "443cfd58-38e2-4093-8752-3a2efaed8c86",
+                  "title": "Flooding of requests from same IP",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "See Threat #220",
+                  "mitigation": "See Threat #220",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 259,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 1
+              }
             },
-            "id": "bf2f47ca-7267-4929-8b7d-a760c40a7eb8",
+            "id": "2a199226-8ed3-4197-afea-25ffd74f00b9",
             "labels": [
-              "Dog information"
+              "Email"
+            ],
+            "source": {
+              "cell": "e1e745d5-adde-4347-8e15-47aa59b79b84"
+            },
+            "target": {
+              "cell": "cc5a7189-e542-4084-953c-e3cb9be01686"
+            },
+            "vertices": [
+              {
+                "x": 610,
+                "y": 120
+              },
+              {
+                "x": 680,
+                "y": 80
+              },
+              {
+                "x": 790,
+                "y": 80
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Email",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "fc45b7e7-8318-4950-a1c4-c7394dbe4ced",
+                  "title": "Email changed to report lost dog",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "See threat #250",
+                  "mitigation": "See threat #250",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 252,
+                  "score": ""
+                },
+                {
+                  "id": "8cedfe44-2352-42d5-aa24-c938f76e5838",
+                  "title": "Plain emails captured",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "See threat #254",
+                  "mitigation": "See threat #254",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 256,
+                  "score": ""
+                },
+                {
+                  "id": "51b7c771-6786-45c3-ad11-13d55398721c",
+                  "title": "Flooding of requests from same IP",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "See Threat #220",
+                  "mitigation": "See Threat #220",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 260,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 1
+              }
+            },
+            "id": "3fee8ccd-37ff-4ba9-9d32-c670d481048d",
+            "labels": [
+              "Email"
             ],
             "source": {
               "cell": "cc5a7189-e542-4084-953c-e3cb9be01686"
             },
             "target": {
-              "cell": "e928eaa2-49f0-457b-b62f-114619fb2cdc"
+              "x": 1220,
+              "y": 260
             },
             "vertices": [
               {
-                "x": 1090,
-                "y": 70
+                "x": 1070,
+                "y": 230
               },
               {
-                "x": 1160,
-                "y": 70
+                "x": 1140,
+                "y": 260
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Email",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "3095b8b9-2100-4ae0-8b4d-58071390f3ca",
+                  "title": "Confirmation email sent to different email that reported the dog lost",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "A man-in-the-middle could redirect an email (or all emails) being sent to confirm a dog has been reported as being lost.",
+                  "mitigation": "Encrypt data during transmission\nImplement digital signatures to ensure data integrity\n",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 253,
+                  "score": ""
+                },
+                {
+                  "id": "d69bbd0e-129b-492f-9835-19c40410ec70",
+                  "title": "Plain emails captured",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "See threat #254",
+                  "mitigation": "See threat #254",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 257,
+                  "score": ""
+                },
+                {
+                  "id": "8f80f670-def1-42cd-a186-be552058cfa2",
+                  "title": "Flooding of requests from same IP",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "See Threat #220",
+                  "mitigation": "See Threat #220",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 261,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 1
+              }
+            },
+            "id": "fc6fcca6-9a03-411a-a5fd-75717b8329e6",
+            "labels": [
+              "Email"
+            ],
+            "source": {
+              "cell": "cc5a7189-e542-4084-953c-e3cb9be01686"
+            },
+            "target": {
+              "cell": "afd5c837-348e-4c45-a9fa-b70c4b0d2f6f"
+            },
+            "vertices": [
+              {
+                "x": 890,
+                "y": 210
+              },
+              {
+                "x": 870,
+                "y": 260
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Dog name",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "36b0e6bb-a58d-4b2b-ad14-621b172d4293",
+                  "title": "Dog name changed to report lost dog",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Dog name changed to report lost dog",
+                  "mitigation": "Encrypt data during transmission\nImplement digital signatures to ensure data integrity",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 262,
+                  "score": ""
+                },
+                {
+                  "id": "31d622ed-3c52-446f-a2a0-4d034c7b1b35",
+                  "title": "Dog names captured",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Dog names in plain text could be captured through transmission and used maliciously",
+                  "mitigation": "Encrypt data in transmission\nMinimize data transmitted\n",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 263,
+                  "score": ""
+                },
+                {
+                  "id": "773b7c79-7321-4b78-a6de-1a746fd867b2",
+                  "title": "Flooding of requests from same IP",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "See Threat #220",
+                  "mitigation": "See Threat #220",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 266,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 1
+              }
+            },
+            "id": "bca36198-e4b9-4f6e-b803-7407d6306feb",
+            "labels": [
+              "Dog name"
+            ],
+            "source": {
+              "cell": "f0f41188-fd2e-43f1-a50e-08c643c531aa"
+            },
+            "target": {
+              "cell": "e1e745d5-adde-4347-8e15-47aa59b79b84"
+            },
+            "vertices": [
+              {
+                "x": 280,
+                "y": 300
+              },
+              {
+                "x": 330,
+                "y": 270
+              },
+              {
+                "x": 410,
+                "y": 240
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Dog name",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "aa768460-599b-4579-90c4-c2bbb6efddd0",
+                  "title": "Dog name changed to report lost dog",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "See threat #262",
+                  "mitigation": "See threat #262",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 264,
+                  "score": ""
+                },
+                {
+                  "id": "66aa4072-5a34-40e4-9dfd-9ab1feda582a",
+                  "title": "Dog names captured",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "See threat #263",
+                  "mitigation": "See threat #263",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 265,
+                  "score": ""
+                },
+                {
+                  "id": "71bf9712-0249-405c-8b60-6595b885de1d",
+                  "title": "Flooding of requests from same IP",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "See Threat #220",
+                  "mitigation": "See Threat #220",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 267,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 1
+              }
+            },
+            "id": "fcc55547-f346-4612-ad50-5eba520cb555",
+            "labels": [
+              "Dog name"
+            ],
+            "source": {
+              "cell": "e1e745d5-adde-4347-8e15-47aa59b79b84"
+            },
+            "target": {
+              "cell": "cc5a7189-e542-4084-953c-e3cb9be01686"
+            },
+            "vertices": [
+              {
+                "x": 670,
+                "y": 112.5
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Owner matching email",
+              "description": "Boolean that informs the updating of dog lost status if the email the user entered matches the owner. Assuming that Dog datastore has a foreign key for a dog's owner.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "ea525dd0-8a11-4fcf-b959-eb453d10e0ee",
+                  "title": "Email matching owner changed",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "A man-in-the-middle could change if the email is matching the owner of the dog that has been reported lost in transit. This could lead to valid lost dog report requests not being correctly processed.",
+                  "mitigation": "Encrypt data during transmission\nImplement digital signatures to ensure data integrity\n",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 268,
+                  "score": ""
+                },
+                {
+                  "id": "b74ae06b-8526-4234-b295-01e0793906c6",
+                  "title": "Flooding of requests from same IP",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "See Threat #220",
+                  "mitigation": "See Threat #220",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 269,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 1
+              }
+            },
+            "id": "8783d045-9dd8-4e5f-b277-85b9634bc02d",
+            "labels": [
+              "Owner matching email"
+            ],
+            "source": {
+              "cell": "3b273c44-8d17-4a56-b5ec-7be63ac8c29c"
+            },
+            "target": {
+              "cell": "cc5a7189-e542-4084-953c-e3cb9be01686"
+            },
+            "vertices": [
+              {
+                "x": 1180,
+                "y": 200
+              },
+              {
+                "x": 1120,
+                "y": 170
+              },
+              {
+                "x": 1050,
+                "y": 150
               }
             ]
           },
@@ -3367,7 +3733,7 @@
             "data": {
               "type": "tm.Process",
               "name": "Update dog lost status",
-              "description": "",
+              "description": "Process to update a dog's lost status",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": true,
@@ -3449,78 +3815,6 @@
                 "informationDisclosure": 1,
                 "denialOfService": 1,
                 "elevationOfPrivilege": 1
-              }
-            }
-          },
-          {
-            "position": {
-              "x": 450,
-              "y": 660
-            },
-            "size": {
-              "width": 130,
-              "height": 80
-            },
-            "attrs": {
-              "text": {
-                "text": "Send email"
-              },
-              "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "process",
-            "zIndex": 14,
-            "id": "e35994d2-5b35-4510-8619-86f44efd89cd",
-            "data": {
-              "type": "tm.Process",
-              "name": "Send email",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "handlesCardPayment": false,
-              "handlesGoodsOrServices": false,
-              "isWebApplication": false,
-              "privilegeLevel": "",
-              "threats": [
-                {
-                  "id": "0b4c2e9c-d557-463c-9c1c-a5fc560d1b86",
-                  "title": "Fake emails sent",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Spoofing",
-                  "description": "See threat #226",
-                  "mitigation": "See threat #226",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 237,
-                  "score": ""
-                },
-                {
-                  "id": "8c96536b-da96-4557-b0c9-73edf7ed69d8",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": true,
-                  "number": 238,
-                  "score": ""
-                }
-              ],
-              "threatFrequency": {
-                "spoofing": 2,
-                "tampering": 0,
-                "repudiation": 0,
-                "informationDisclosure": 0,
-                "denialOfService": 0,
-                "elevationOfPrivilege": 0
               }
             }
           },
@@ -6926,6 +7220,6 @@
     ],
     "diagramTop": 6,
     "reviewer": "",
-    "threatTop": 238
+    "threatTop": 269
   }
 }
