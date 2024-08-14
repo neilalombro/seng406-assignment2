@@ -2174,8 +2174,8 @@
                 "text": "Dog owner"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2189,17 +2189,17 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
               "threats": [
                 {
                   "id": "b8a8267e-c455-4ac8-9c6c-1ea6b0cc1c6e",
                   "title": "Impersonating a dog owner",
-                  "status": "Mitigated",
+                  "status": "Open",
                   "severity": "High",
                   "type": "Spoofing",
-                  "description": "Actor can enter an email address that is not theirs.",
-                  "mitigation": "Request two-factor authentication before being able to report a lost dog.",
+                  "description": "An actor can enter an email address that does not belong to them, falsely representing themselves as the dog owner.",
+                  "mitigation": "Implement two-factor authentication before allowing users to report a lost dog.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 139,
@@ -2208,11 +2208,11 @@
                 {
                   "id": "e7aeb1a9-39fb-48f8-936f-5c56cedfa2c3",
                   "title": "Repudiation of lost dog report",
-                  "status": "Mitigated",
+                  "status": "Open",
                   "severity": "Medium",
                   "type": "Repudiation",
-                  "description": "A dog owner (or someone impersonating as a dog owner) may \n- say they never reported their dog lost and the system says the dog has a lost status\n- or say they have reported their dog and the system says the dog is not lost",
-                  "mitigation": "- Logging all changes to a dog status with timestamps",
+                  "description": "A dog owner, or someone impersonating one, might: \n- Claim they never reported their dog as lost, even though the system shows it as lost.\n- Claim they did report it, but the system does not show the dog as lost.",
+                  "mitigation": "Log all changes to a dog’s status with timestamps and ensure audit trails are available.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 140,
@@ -2220,8 +2220,8 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
-                "repudiation": 2
+                "spoofing": 3,
+                "repudiation": 4
               }
             }
           },
@@ -2239,8 +2239,8 @@
                 "text": "Report lost dog"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2254,12 +2254,86 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "35939c32-5651-4f88-a762-51b2a93f09db",
+                  "title": "Report a dog pretending to be someone else",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "A malicious user might impersonate another dog owner via email and submit a false lost dog report.",
+                  "mitigation": "Require users to log in before reporting a lost dog, raising the trust level of the process.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 216,
+                  "score": ""
+                },
+                {
+                  "id": "458d302c-ccab-4a3c-bec6-34e7ebfe4777",
+                  "title": "Adversary in the middle change content of lost dog report",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An adversary-in-the-middle intercepts the lost dog report and modifies its content (email and/or lost dog name).",
+                  "mitigation": "Use secure connections (e.g., HTTPS).\nSign content with the user’s private key.\nRequire login and use a secure hash for content integrity verification.\n",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 217,
+                  "score": ""
+                },
+                {
+                  "id": "a5d55622-5fe5-435f-a19f-bcb69a6979d7",
+                  "title": "Denying having reported a lost dog",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Dog owner claims they did not report a lost dog.",
+                  "mitigation": "Log all sessions with IDs, timestamps, IP addresses, and user-entered information (email and dog name).\nSend a confirmation email regardless of match.\n",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 218,
+                  "score": ""
+                },
+                {
+                  "id": "73d16825-2fd9-4647-8c21-e4c5a38e060a",
+                  "title": "Interception of lost dog data",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Intercepting the lost dog report process could leak sensitive information such as emails and dog names.",
+                  "mitigation": "Encrypt data both in transit and at rest.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 219,
+                  "score": ""
+                },
+                {
+                  "id": "1f199859-2932-498e-9c27-5a2ee54eba72",
+                  "title": "Flooding of requests from same IP",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "An attacker might send numerous lost dog report requests from a single IP, overwhelming the system.",
+                  "mitigation": "Implement CAPTCHA or similar features.\nBlock multiple requests from the same IP after a threshold.\nApply rate limiting.\n",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 220,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 2,
+                "tampering": 2,
+                "repudiation": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -2276,8 +2350,8 @@
                 "text": "Confirmation email"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2291,12 +2365,99 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "9b646702-9097-4379-9e4a-a6c7a495568a",
+                  "title": "Fake emails sent",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Emails that are not from the council can be sent to pretend as a lost dog confirmation email.",
+                  "mitigation": "Implement SPF, DKIM, and DMARC to prevent email spoofing.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 226,
+                  "score": ""
+                },
+                {
+                  "id": "35e34c8f-5f1b-409e-b120-3f1de5895eb8",
+                  "title": "Email intercepted and content changed",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Email with privileged access information such as dog tag id and lost status is intercepted and changed",
+                  "mitigation": "Minimize sensitive details in emails; require authentication to view details on the council website instead of directly seeing the data on the email.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 227,
+                  "score": ""
+                },
+                {
+                  "id": "0fe4228e-c269-487f-a417-a8d6c87034b6",
+                  "title": "Deny receiving confirmation email",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "The owner can deny receiving a confirmation email.",
+                  "mitigation": "Log all sent emails with their content and timestamps for audit purposes.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 228,
+                  "score": ""
+                },
+                {
+                  "id": "db33fab5-ec60-4a58-9be0-15ead18ff7df",
+                  "title": "Email intercepted for content",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Email with privileged access information such as dog tag id and lost status is stolen",
+                  "mitigation": "Minimize sensitive details in emails; require authentication to view details on the council website.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 229,
+                  "score": ""
+                },
+                {
+                  "id": "d7e9d02d-6493-4e5f-9c13-c94a031400fa",
+                  "title": "Flooding of requests from same IP",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "See Threat #220",
+                  "mitigation": "See Threat #220",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 230,
+                  "score": ""
+                },
+                {
+                  "id": "00ba656d-fc30-4af7-bde6-5f9765b027c1",
+                  "title": "Unauthorized Elevation to Send Confirmation Emails",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "An attacker gains unauthorized access to the email-sending process, allowing them to send confirmation emails without proper authorization.",
+                  "mitigation": "Implement strict role-based access controls (RBAC) for the email-sending process.\nLog all email-sending activities with timestamps and user IDs.\nRegularly audit email logs and access controls to detect and prevent unauthorized access.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 231,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 1,
+                "repudiation": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 1
+              }
             }
           },
           {
@@ -2313,11 +2474,13 @@
                 "text": "Dog datastore"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2331,7 +2494,7 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
@@ -2345,17 +2508,43 @@
                   "severity": "Medium",
                   "type": "Tampering",
                   "description": "An attacker may add, remove, or change entries of lost dogs",
-                  "mitigation": "Use encryption, access controls, and data integrity checks.",
+                  "mitigation": "Use encryption, enforce access controls, and implement data integrity checks.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 141,
                   "score": ""
+                },
+                {
+                  "id": "41099abc-9ed7-45d2-ba6b-5afd8f79c9c2",
+                  "title": "Datastore unwanted access",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "The datastore must be access-protected to only authorised personnel.",
+                  "mitigation": "Store datastore credentials securely in password vaults; apply the least privilege principle.\nInject datastore credentials into software from secure variables/files.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 232,
+                  "score": ""
+                },
+                {
+                  "id": "9c6424b0-7db1-469d-85a3-b23f7cfc2e0a",
+                  "title": "Query flooding",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "An attacker directly sends a high volume of complex queries that overwhelm the datastore.",
+                  "mitigation": "Optimize queries.\nRate-limit the number of queries.\nUse parameterized queries to prevent unnecessary complexity.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 233,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
-                "tampering": 1,
-                "repudiation": 0,
-                "informationDisclosure": 0,
+                "tampering": 2,
+                "repudiation": 1,
+                "informationDisclosure": 1,
                 "denialOfService": 0
               }
             }
@@ -3166,8 +3355,8 @@
                 "text": "Update dog lost status"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -3181,12 +3370,86 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "6e947d75-e71c-4a7a-b857-712ed26530a9",
+                  "title": "Injecting Code to Manipulate Dog Status",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An attacker could manipulate the dog’s status (lost, found, unreported) by injecting code during the update process.",
+                  "mitigation": "Validate all inputs.\nUse parameterized requests.\nApply strict access controls.\nEnsure updates are processed only by authorized personnel via secure methods.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 221,
+                  "score": ""
+                },
+                {
+                  "id": "fbe54550-d673-400e-bed2-bbfad0c1d37b",
+                  "title": "Denying having reported a lost dog",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "See Threat #218",
+                  "mitigation": "See Threat #218",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 222,
+                  "score": ""
+                },
+                {
+                  "id": "ac2f9f28-557c-4bd7-af18-c07ade20b88d",
+                  "title": "Unauthorized Access to Dog Status Data",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "An attacker gains access to sensitive information (maintainer access or higher) regarding a dog's last known tag ID by updating a dog's status.",
+                  "mitigation": "Enforce strong authentication and authorization mechanisms.\nEncrypt data at rest and in transit.\nLimit access to sensitive data based on the principle of least privilege.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 223,
+                  "score": ""
+                },
+                {
+                  "id": "4f51033f-74c8-489f-aa69-5bc9e112db64",
+                  "title": "Flooding of requests from same IP",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "See Threat #220",
+                  "mitigation": "See Threat #220",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 224,
+                  "score": ""
+                },
+                {
+                  "id": "59d3dfa4-24dd-4aa3-82b6-fdf8dc2d2a74",
+                  "title": "Unauthorized Status Update",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "An attacker with lower-level privileges (lower than a maintainer) escalates their access to update a dog's status (lost, found, unreported) without proper authorization.",
+                  "mitigation": "Implement role-based access control (RBAC) to restrict status updates to authorized personnel only.\nLog all status changes with user IDs and timestamps.\nRegularly audit access permissions to ensure least privilege is maintained.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 225,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 2,
+                "tampering": 1,
+                "repudiation": 2,
+                "informationDisclosure": 1,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 1
+              }
             }
           },
           {
@@ -3203,8 +3466,8 @@
                 "text": "Send email"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -3218,12 +3481,47 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "0b4c2e9c-d557-463c-9c1c-a5fc560d1b86",
+                  "title": "Fake emails sent",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "See threat #226",
+                  "mitigation": "See threat #226",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 237,
+                  "score": ""
+                },
+                {
+                  "id": "8c96536b-da96-4557-b0c9-73edf7ed69d8",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 238,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 2,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -3240,11 +3538,13 @@
                 "text": "Owner datastore"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -3258,13 +3558,59 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "9799a60b-d164-4027-afcb-8f61db0422bf",
+                  "title": "Changing data maliciously",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An attacker may add, remove, or change entries of owners",
+                  "mitigation": "Use encryption, enforce access controls, and implement data integrity checks.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 234,
+                  "score": ""
+                },
+                {
+                  "id": "133e4c65-cdf8-4fba-bfa4-7d1961d20d14",
+                  "title": "Datastore unwanted access",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "See threat #232",
+                  "mitigation": "See threat #232",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 235,
+                  "score": ""
+                },
+                {
+                  "id": "c9cacdeb-cec1-4008-8921-07b7f8dab344",
+                  "title": "Query flooding",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "See threat #233",
+                  "mitigation": "See threat #233",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 236,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 2,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
             }
           }
         ]
@@ -6580,6 +6926,6 @@
     ],
     "diagramTop": 6,
     "reviewer": "",
-    "threatTop": 215
+    "threatTop": 238
   }
 }
