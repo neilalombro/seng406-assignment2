@@ -19,8 +19,8 @@
         "cells": [
           {
             "position": {
-              "x": 290,
-              "y": 60
+              "x": 40,
+              "y": 20
             },
             "size": {
               "width": 112.5,
@@ -68,226 +68,6 @@
                 "repudiation": 0
               }
             }
-          },
-          {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            },
-            "id": "b7ae4064-4342-4a61-a006-0708bc4f6c0c",
-            "source": {
-              "x": 610,
-              "y": -140
-            },
-            "target": {
-              "x": 620,
-              "y": 530
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Terminate data",
-              "description": "Email address, tag ID, and dog's name.",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "82a2d103-b026-44ac-a9f5-5f2d0d80aca8",
-                  "title": "Attacker alters data",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "An attacker changes the termination request data, such as changing the email address, dog information, or registration status.",
-                  "mitigation": " - Use securer communication channels, such as HTTPS, to ensure that data is transmitted safely and discretely\n - Implement hashing or digital signatures to check the integrity of data\n - Validate data throughout transit to ensure it hasn't been tampered with",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 142,
-                  "score": ""
-                },
-                {
-                  "id": "481d482d-c35c-4cc9-959e-fbdf441f75b4",
-                  "title": "Sensitive information intercepted",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Information disclosure",
-                  "description": "Sensitive information such as the owner’s personal details or the dogs information is intercepted during transit by someone without authorisation.",
-                  "mitigation": " - Use role-based access control to limit access to sensitive data\n - Encrypt data throughout the process to prevent unauthorised access\n - Implement data masking, so sensitive information is hidden where necessary\n - Don't use/ask for unnecessary sensitive information throughout \n - Use securer communication channels, such as HTTPS, to ensure that data is transmitted safely and discretely",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 143,
-                  "score": ""
-                },
-                {
-                  "id": "70005346-d88f-47d3-bd88-779868c12001",
-                  "title": "System flooding",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Denial of service",
-                  "description": "An attacker floods the system with termination requests, likely leading to the service going down.",
-                  "mitigation": " - Limit the number of termination requests allowed per user or IP address in a given time frame\n - Monitor for unusual behaviour or traffic and implement automatic blocking or throttling mechanisms to help\n - Use load balancers to distribute traffic and handle spikes in requests",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 144,
-                  "score": ""
-                }
-              ],
-              "threatFrequency": {
-                "tampering": 1,
-                "informationDisclosure": 1,
-                "denialOfService": 1
-              }
-            },
-            "id": "964bc963-bfb0-470c-855e-9f5f1d83d971",
-            "labels": [
-              "Terminate data"
-            ],
-            "source": {
-              "x": 370,
-              "y": 50
-            },
-            "target": {
-              "x": 690,
-              "y": -40
-            },
-            "vertices": [
-              {
-                "x": 430,
-                "y": -10
-              },
-              {
-                "x": 490,
-                "y": -40
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Renew data",
-              "description": "Old tag ID, and address to deliver the tag too",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "db615477-259b-4cf6-8368-080a9800125b",
-                  "title": "Attacker alters data",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "An attacker changes the renewal request data, such as changing the delivery address, dog information, registration status, or owner information.",
-                  "mitigation": " - Use securer communication channels, such as HTTPS, to ensure that data is transmitted safely and discretely\n - Implement hashing or digital signatures to check the integrity of data\n - Validate data throughout transit to ensure it hasn't been tampered with",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 145,
-                  "score": ""
-                },
-                {
-                  "id": "63b32091-c625-4858-bdcd-a8a0609b7e16",
-                  "title": "Sensitive information intercepted",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Information disclosure",
-                  "description": "Sensitive information such as the owner’s personal details or the dog’s information is intercepted during transit by someone without authorisation.",
-                  "mitigation": " - Use role-based access control to limit access to sensitive data\n - Encrypt data throughout the process to prevent unauthorised access\n - Implement data masking, so sensitive information is hidden where necessary\n - Don't use/ask for unnecessary sensitive information throughout \n - Use securer communication channels, such as HTTPS, to ensure that data is transmitted safely and discretely",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 146,
-                  "score": ""
-                },
-                {
-                  "id": "ffa8761b-9f56-415c-aa46-e2b4d8798936",
-                  "title": "System flooding",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Denial of service",
-                  "description": "An attacker floods the system with renewal requests, likely leading to the service going down.",
-                  "mitigation": " - Limit the number of termination requests allowed per user or IP address in a given time frame\n - Monitor for unusual behaviour or traffic and implement automatic blocking or throttling mechanisms to help\n - Use load balancers to distribute traffic and handle spikes in requests",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 147,
-                  "score": ""
-                }
-              ],
-              "threatFrequency": {
-                "tampering": 1,
-                "informationDisclosure": 1,
-                "denialOfService": 1
-              }
-            },
-            "id": "25228b7a-2235-46a8-8253-d552e9e1d2e5",
-            "labels": [
-              "Renew data"
-            ],
-            "source": {
-              "x": 410,
-              "y": 90
-            },
-            "target": {
-              "x": 690,
-              "y": 70
-            },
-            "vertices": [
-              {
-                "x": 530,
-                "y": 90
-              }
-            ]
           },
           {
             "shape": "flow",
@@ -500,101 +280,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Tag data",
-              "description": "IDs for both the old and the new tag",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "45c73eed-fd55-4a03-8b72-0a1b50f41372",
-                  "title": "Attacker alters data",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "An attacker changes the tag information, such as dog information, the registration status, owner information, delivery details",
-                  "mitigation": " - Use securer communication channels, such as HTTPS, to ensure that data is transmitted safely and discretely\n - Implement hashing or digital signatures to check the integrity of data\n - Validate data throughout transit to ensure it hasn't been tampered with",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 154,
-                  "score": ""
-                },
-                {
-                  "id": "32772ce0-fb7d-4c54-899b-1a942d40c899",
-                  "title": "Sensitive information intercepted",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Information disclosure",
-                  "description": "Sensitive information such as the owner’s personal details, delivery address, or the dogs information is intercepted during transit by someone without authorisation.",
-                  "mitigation": " - Use role-based access control to limit access to sensitive data\n - Encrypt data throughout the process to prevent unauthorised access\n - Implement data masking, so sensitive information is hidden where necessary\n - Don't use/ask for unnecessary sensitive information throughout \n - Use securer communication channels, such as HTTPS, to ensure that data is transmitted safely and discretely",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 155,
-                  "score": ""
-                },
-                {
-                  "id": "48ac0e13-e01a-4228-bb1e-612bf3494aa6",
-                  "title": "System flooding",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Denial of service",
-                  "description": "An attacker disrupting the data flow here (by overloading or other methods) to make this process difficult, impact the datastore, impact the delivery service etc.",
-                  "mitigation": " - Monitor for unusual behaviour or traffic and implement automatic blocking or throttling mechanisms to help\n - Have backup methods and protocols in case this happens",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 156,
-                  "score": ""
-                }
-              ],
-              "threatFrequency": {
-                "tampering": 1,
-                "informationDisclosure": 1,
-                "denialOfService": 1
-              }
-            },
-            "id": "99df17e5-b03d-4e6c-ac5e-fdf26e24ec76",
-            "labels": [
-              "Tag data"
-            ],
-            "source": {
-              "cell": "24c8060e-c575-4a03-88b9-d240520dedf1"
-            },
-            "target": {
-              "cell": "d3ae8552-b475-43b6-9b52-b2a80b55a51a"
-            },
-            "vertices": [
-              {
-                "x": 660,
-                "y": 180
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Delivery Ack",
+              "name": "Invoice ack",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -605,42 +291,42 @@
               "protocol": "",
               "threats": [
                 {
-                  "id": "21bdb143-0390-450b-bcd0-3f3a95983793",
+                  "id": "e9d24349-0926-42ad-a19b-89e9edd6bee3",
                   "title": "Attacker alters data",
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Tampering",
-                  "description": "An attacker changes the acknowledgement information, incorrectly claiming the delivery was or wasn’t received.",
+                  "description": "An attacker changes the acknowledgement information, incorrectly claiming the invoice was or wasn’t received, or incorrectly claiming that it was or wasn’t payed",
                   "mitigation": " - Use securer communication channels, such as HTTPS, to ensure that data is transmitted safely and discretely\n - Implement hashing or digital signatures to check the integrity of data\n - Validate data throughout transit to ensure it hasn't been tampered with",
                   "modelType": "STRIDE",
                   "new": false,
-                  "number": 157,
+                  "number": 172,
                   "score": ""
                 },
                 {
-                  "id": "5fa44d0f-d244-42d7-a1f7-2c7f36b7b153",
+                  "id": "056fa7ef-33b3-4ea9-9f35-8250ce0b3d38",
                   "title": "Sensitive information intercepted",
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Information disclosure",
-                  "description": "Sensitive information such as the owner’s personal details or the dogs information is intercepted during transit by someone without authorisation.",
+                  "description": "Sensitive information such as the owner’s personal details (like email addresses, payment information, etc) is intercepted during transit by someone without authorisation.",
                   "mitigation": " - Use role-based access control to limit access to sensitive data\n - Encrypt data throughout the process to prevent unauthorised access\n - Implement data masking, so sensitive information is hidden where necessary\n - Don't use/ask for unnecessary sensitive information throughout \n - Use securer communication channels, such as HTTPS, to ensure that data is transmitted safely and discretely",
                   "modelType": "STRIDE",
                   "new": false,
-                  "number": 158,
+                  "number": 173,
                   "score": ""
                 },
                 {
-                  "id": "16d00e42-096d-4789-86c3-7f271890d190",
+                  "id": "4864bd38-3c30-41cb-af04-d27920f0cad1",
                   "title": "System flooding",
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Denial of service",
-                  "description": "An attacker could flood the system with fake acknowledgements to overwhelm the delivery service",
+                  "description": "An attacker could flood the system with fake acknowledgements to overwhelm the invoice service, impacting (i.e. delaying or incorrectly changing) the invoices that are sent",
                   "mitigation": " - Monitor for unusual behaviour or traffic and implement automatic blocking or throttling mechanisms to help\n - Have backup methods and protocols in case this happens",
                   "modelType": "STRIDE",
                   "new": false,
-                  "number": 159,
+                  "number": 174,
                   "score": ""
                 }
               ],
@@ -650,122 +336,22 @@
                 "denialOfService": 1
               }
             },
-            "id": "ffa49aea-e027-4f6f-ada3-7e003a1cfd04",
+            "id": "1d90920f-1a0f-4e2f-9164-1686ac54d59e",
             "labels": [
-              "Delivery Ack"
+              "Invoice ack"
             ],
             "source": {
-              "x": 410,
-              "y": 120
+              "x": 60,
+              "y": 100
             },
             "target": {
-              "x": 540,
-              "y": 210
+              "x": 550,
+              "y": 470
             },
             "vertices": [
               {
-                "x": 500,
-                "y": 160
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Tracking data",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "644449d8-d87d-4899-bd4c-2ae59984cb27",
-                  "title": "Attacker alters data",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "An attacker changes the delivery information, I.e. what is included in the delivery, the estimated date, contact details, extra payments, etc.",
-                  "mitigation": " - Use securer communication channels, such as HTTPS, to ensure that data is transmitted safely and discretely\n - Implement hashing or digital signatures to check the integrity of data\n - Validate data throughout transit to ensure it hasn't been tampered with",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 160,
-                  "score": ""
-                },
-                {
-                  "id": "9ee16c8c-c171-492e-8d32-bff1b7d18ed5",
-                  "title": "Sensitive information intercepted",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Information disclosure",
-                  "description": "Sensitive information such as the owner’s personal details or address is intercepted during transit by someone without authorisation.",
-                  "mitigation": " - Use role-based access control to limit access to sensitive data\n - Encrypt data throughout the process to prevent unauthorised access\n - Implement data masking, so sensitive information is hidden where necessary\n - Don't use/ask for unnecessary sensitive information throughout \n - Use securer communication channels, such as HTTPS, to ensure that data is transmitted safely and discretely",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 161,
-                  "score": ""
-                },
-                {
-                  "id": "8dc321dd-9120-4c29-bc26-f206c1e7b742",
-                  "title": "System flooding",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Denial of service",
-                  "description": "An attacker could disrupt the tracking/delivery system (using flooding or similar) to impact delivery updates, deliveries, etc",
-                  "mitigation": " - Monitor for unusual behaviour or traffic and implement automatic blocking or throttling mechanisms to help\n - Have backup methods and protocols in case this happens",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 162,
-                  "score": ""
-                }
-              ],
-              "threatFrequency": {
-                "tampering": 1,
-                "informationDisclosure": 1,
-                "denialOfService": 1
-              }
-            },
-            "id": "23c40177-9b4a-4795-9015-232dcaba114a",
-            "labels": [
-              "Tracking data"
-            ],
-            "source": {
-              "x": 530,
-              "y": 220
-            },
-            "target": {
-              "x": 390,
-              "y": 130
-            },
-            "vertices": [
-              {
-                "x": 520,
-                "y": 200
-              },
-              {
-                "x": 490,
-                "y": 180
+                "x": 160,
+                "y": 420
               }
             ]
           },
@@ -851,21 +437,113 @@
               "Termination email ack"
             ],
             "source": {
-              "x": 370,
-              "y": 130
+              "x": 140,
+              "y": 100
             },
             "target": {
-              "x": 690,
-              "y": 340
+              "x": 530,
+              "y": 380
             },
             "vertices": [
               {
-                "x": 460,
-                "y": 310
-              },
-              {
-                "x": 630,
+                "x": 230,
                 "y": 340
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Termination details",
+              "description": "Contains link to registration process",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "9fdbfbbb-1661-4fcf-9372-26b1b744b4f5",
+                  "title": "Attacker alters data",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An attacker changes the termination information in the email, I.e. what is included in the termination information such as owner details, new tag ids, dog names, email addresses, etc. Or the attacker could alter the registration link and redirect users to a malicious website. ",
+                  "mitigation": " - Use securer communication channels, such as HTTPS, to ensure that data is transmitted safely and discretely\n - Implement hashing or digital signatures to check the integrity of data\n - Validate data throughout transit to ensure it hasn't been tampered with",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 166,
+                  "score": ""
+                },
+                {
+                  "id": "ca64d83a-f153-4b02-9d52-d38a2d71132e",
+                  "title": "Sensitive information intercepted",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Sensitive information such as the owner’s personal details (like email addresses) or dog/tag details is intercepted during transit by someone without authorisation.",
+                  "mitigation": " - Use role-based access control to limit access to sensitive data\n - Encrypt data throughout the process to prevent unauthorised access\n - Implement data masking, so sensitive information is hidden where necessary\n - Don't use/ask for unnecessary sensitive information throughout \n - Use securer communication channels, such as HTTPS, to ensure that data is transmitted safely and discretely",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 167,
+                  "score": ""
+                },
+                {
+                  "id": "4d5b304b-81a9-458a-8177-1b4d4303a585",
+                  "title": "System flooding",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "An attacker could disrupt the email process system (using flooding or similar) to impact the termination detail emails.",
+                  "mitigation": " - Monitor for unusual behaviour or traffic and implement automatic blocking or throttling mechanisms to help\n - Have backup methods and protocols in case this happens",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 168,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 2,
+                "informationDisclosure": 1,
+                "denialOfService": 1
+              }
+            },
+            "id": "43ea9fee-7fd1-4ed5-bad4-9e12a98583e8",
+            "labels": [
+              "Termination details"
+            ],
+            "source": {
+              "x": 540,
+              "y": 400
+            },
+            "target": {
+              "x": 110,
+              "y": 100
+            },
+            "vertices": [
+              {
+                "x": 210,
+                "y": 360
               }
             ]
           },
@@ -951,21 +629,21 @@
               "Invoice data"
             ],
             "source": {
-              "x": 670,
-              "y": 430
+              "x": 540,
+              "y": 450
             },
             "target": {
-              "x": 330,
-              "y": 130
+              "x": 80,
+              "y": 100
             },
             "vertices": [
               {
-                "x": 450,
-                "y": 400
+                "x": 290,
+                "y": 430
               },
               {
-                "x": 350,
-                "y": 290
+                "x": 120,
+                "y": 320
               }
             ]
           },
@@ -990,7 +668,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Invoice ack",
+              "name": "Delivery Ack",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -1001,42 +679,42 @@
               "protocol": "",
               "threats": [
                 {
-                  "id": "e9d24349-0926-42ad-a19b-89e9edd6bee3",
+                  "id": "21bdb143-0390-450b-bcd0-3f3a95983793",
                   "title": "Attacker alters data",
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Tampering",
-                  "description": "An attacker changes the acknowledgement information, incorrectly claiming the invoice was or wasn’t received, or incorrectly claiming that it was or wasn’t payed",
+                  "description": "An attacker changes the acknowledgement information, incorrectly claiming the delivery was or wasn’t received.",
                   "mitigation": " - Use securer communication channels, such as HTTPS, to ensure that data is transmitted safely and discretely\n - Implement hashing or digital signatures to check the integrity of data\n - Validate data throughout transit to ensure it hasn't been tampered with",
                   "modelType": "STRIDE",
                   "new": false,
-                  "number": 172,
+                  "number": 157,
                   "score": ""
                 },
                 {
-                  "id": "056fa7ef-33b3-4ea9-9f35-8250ce0b3d38",
+                  "id": "5fa44d0f-d244-42d7-a1f7-2c7f36b7b153",
                   "title": "Sensitive information intercepted",
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Information disclosure",
-                  "description": "Sensitive information such as the owner’s personal details (like email addresses, payment information, etc) is intercepted during transit by someone without authorisation.",
+                  "description": "Sensitive information such as the owner’s personal details or the dogs information is intercepted during transit by someone without authorisation.",
                   "mitigation": " - Use role-based access control to limit access to sensitive data\n - Encrypt data throughout the process to prevent unauthorised access\n - Implement data masking, so sensitive information is hidden where necessary\n - Don't use/ask for unnecessary sensitive information throughout \n - Use securer communication channels, such as HTTPS, to ensure that data is transmitted safely and discretely",
                   "modelType": "STRIDE",
                   "new": false,
-                  "number": 173,
+                  "number": 158,
                   "score": ""
                 },
                 {
-                  "id": "4864bd38-3c30-41cb-af04-d27920f0cad1",
+                  "id": "16d00e42-096d-4789-86c3-7f271890d190",
                   "title": "System flooding",
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Denial of service",
-                  "description": "An attacker could flood the system with fake acknowledgements to overwhelm the invoice service, impacting (i.e. delaying or incorrectly changing) the invoices that are sent",
+                  "description": "An attacker could flood the system with fake acknowledgements to overwhelm the delivery service",
                   "mitigation": " - Monitor for unusual behaviour or traffic and implement automatic blocking or throttling mechanisms to help\n - Have backup methods and protocols in case this happens",
                   "modelType": "STRIDE",
                   "new": false,
-                  "number": 174,
+                  "number": 159,
                   "score": ""
                 }
               ],
@@ -1046,22 +724,384 @@
                 "denialOfService": 1
               }
             },
-            "id": "1d90920f-1a0f-4e2f-9164-1686ac54d59e",
+            "id": "ffa49aea-e027-4f6f-ada3-7e003a1cfd04",
             "labels": [
-              "Invoice ack"
+              "Delivery Ack"
             ],
             "source": {
-              "x": 310,
-              "y": 130
+              "x": 170,
+              "y": 80
             },
             "target": {
-              "x": 680,
-              "y": 450
+              "cell": "d3ae8552-b475-43b6-9b52-b2a80b55a51a"
             },
             "vertices": [
               {
-                "x": 370,
-                "y": 410
+                "x": 230,
+                "y": 240
+              },
+              {
+                "x": 360,
+                "y": 300
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Tracking data",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "644449d8-d87d-4899-bd4c-2ae59984cb27",
+                  "title": "Attacker alters data",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An attacker changes the delivery information, I.e. what is included in the delivery, the estimated date, contact details, extra payments, etc.",
+                  "mitigation": " - Use securer communication channels, such as HTTPS, to ensure that data is transmitted safely and discretely\n - Implement hashing or digital signatures to check the integrity of data\n - Validate data throughout transit to ensure it hasn't been tampered with",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 160,
+                  "score": ""
+                },
+                {
+                  "id": "9ee16c8c-c171-492e-8d32-bff1b7d18ed5",
+                  "title": "Sensitive information intercepted",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Sensitive information such as the owner’s personal details or address is intercepted during transit by someone without authorisation.",
+                  "mitigation": " - Use role-based access control to limit access to sensitive data\n - Encrypt data throughout the process to prevent unauthorised access\n - Implement data masking, so sensitive information is hidden where necessary\n - Don't use/ask for unnecessary sensitive information throughout \n - Use securer communication channels, such as HTTPS, to ensure that data is transmitted safely and discretely",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 161,
+                  "score": ""
+                },
+                {
+                  "id": "8dc321dd-9120-4c29-bc26-f206c1e7b742",
+                  "title": "System flooding",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "An attacker could disrupt the tracking/delivery system (using flooding or similar) to impact delivery updates, deliveries, etc",
+                  "mitigation": " - Monitor for unusual behaviour or traffic and implement automatic blocking or throttling mechanisms to help\n - Have backup methods and protocols in case this happens",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 162,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 1
+              }
+            },
+            "id": "23c40177-9b4a-4795-9015-232dcaba114a",
+            "labels": [
+              "Tracking data"
+            ],
+            "source": {
+              "cell": "d3ae8552-b475-43b6-9b52-b2a80b55a51a"
+            },
+            "target": {
+              "x": 160,
+              "y": 90
+            },
+            "vertices": [
+              {
+                "x": 250,
+                "y": 310
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Register/Login ack",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "3acaabb8-3928-4e32-bba3-8ee4976a6ffd",
+            "source": {
+              "cell": "1f7f362f-cdbc-4812-bf98-3f4e6a98505a"
+            },
+            "target": {
+              "x": 160,
+              "y": 30
+            },
+            "vertices": [
+              {
+                "x": 210,
+                "y": -10
+              }
+            ],
+            "labels": [
+              "Register/Login ack"
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "b7ae4064-4342-4a61-a006-0708bc4f6c0c",
+            "source": {
+              "x": 590,
+              "y": -140
+            },
+            "target": {
+              "x": 820,
+              "y": 540
+            },
+            "vertices": [
+              {
+                "x": 630,
+                "y": 170
+              },
+              {
+                "x": 800,
+                "y": 300
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Register/Login details",
+              "description": "Will include an email and password",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "ad4c5dec-e66a-4f29-af10-516be0d27998",
+            "source": {
+              "x": 100,
+              "y": 10
+            },
+            "target": {
+              "cell": "1f7f362f-cdbc-4812-bf98-3f4e6a98505a"
+            },
+            "labels": [
+              "Register/Login details"
+            ],
+            "vertices": [
+              {
+                "x": 150,
+                "y": -30
+              },
+              {
+                "x": 230,
+                "y": -80
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Renew data",
+              "description": "Old tag ID, and address to deliver the tag too",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "db615477-259b-4cf6-8368-080a9800125b",
+                  "title": "Attacker alters data",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An attacker changes the renewal request data, such as changing the delivery address, dog information, registration status, or owner information.",
+                  "mitigation": " - Use securer communication channels, such as HTTPS, to ensure that data is transmitted safely and discretely\n - Implement hashing or digital signatures to check the integrity of data\n - Validate data throughout transit to ensure it hasn't been tampered with",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 145,
+                  "score": ""
+                },
+                {
+                  "id": "63b32091-c625-4858-bdcd-a8a0609b7e16",
+                  "title": "Sensitive information intercepted",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Sensitive information such as the owner’s personal details or the dog’s information is intercepted during transit by someone without authorisation.",
+                  "mitigation": " - Use role-based access control to limit access to sensitive data\n - Encrypt data throughout the process to prevent unauthorised access\n - Implement data masking, so sensitive information is hidden where necessary\n - Don't use/ask for unnecessary sensitive information throughout \n - Use securer communication channels, such as HTTPS, to ensure that data is transmitted safely and discretely",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 146,
+                  "score": ""
+                },
+                {
+                  "id": "ffa8761b-9f56-415c-aa46-e2b4d8798936",
+                  "title": "System flooding",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "An attacker floods the system with renewal requests, likely leading to the service going down.",
+                  "mitigation": " - Limit the number of termination requests allowed per user or IP address in a given time frame\n - Monitor for unusual behaviour or traffic and implement automatic blocking or throttling mechanisms to help\n - Use load balancers to distribute traffic and handle spikes in requests",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 147,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 1
+              }
+            },
+            "id": "25228b7a-2235-46a8-8253-d552e9e1d2e5",
+            "labels": [
+              "Renew data"
+            ],
+            "source": {
+              "x": 170,
+              "y": 60
+            },
+            "target": {
+              "x": 690,
+              "y": 70
+            },
+            "vertices": [
+              {
+                "x": 530,
+                "y": 90
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "1431719b-4a86-4df2-b665-716482f62378",
+            "source": {
+              "x": 270,
+              "y": -140
+            },
+            "target": {
+              "x": 420,
+              "y": 550
+            },
+            "vertices": [
+              {
+                "x": 350,
+                "y": 210
+              },
+              {
+                "x": 410,
+                "y": 500
               }
             ]
           },
@@ -1151,8 +1191,8 @@
               "y": 380
             },
             "target": {
-              "x": 780,
-              "y": 350
+              "x": 620,
+              "y": 370
             },
             "vertices": [
               {
@@ -1247,8 +1287,8 @@
               "y": 410
             },
             "target": {
-              "x": 780,
-              "y": 430
+              "x": 630,
+              "y": 440
             },
             "vertices": [
               {
@@ -1278,8 +1318,8 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Termination details",
-              "description": "Contains link to registration process",
+              "name": "Tag data",
+              "description": "IDs for both the old and the new tag",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": true,
@@ -1289,68 +1329,264 @@
               "protocol": "",
               "threats": [
                 {
-                  "id": "9fdbfbbb-1661-4fcf-9372-26b1b744b4f5",
+                  "id": "45c73eed-fd55-4a03-8b72-0a1b50f41372",
                   "title": "Attacker alters data",
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Tampering",
-                  "description": "An attacker changes the termination information in the email, I.e. what is included in the termination information such as owner details, new tag ids, dog names, email addresses, etc. Or the attacker could alter the registration link and redirect users to a malicious website. ",
+                  "description": "An attacker changes the tag information, such as dog information, the registration status, owner information, delivery details",
                   "mitigation": " - Use securer communication channels, such as HTTPS, to ensure that data is transmitted safely and discretely\n - Implement hashing or digital signatures to check the integrity of data\n - Validate data throughout transit to ensure it hasn't been tampered with",
                   "modelType": "STRIDE",
                   "new": false,
-                  "number": 166,
+                  "number": 154,
                   "score": ""
                 },
                 {
-                  "id": "ca64d83a-f153-4b02-9d52-d38a2d71132e",
+                  "id": "32772ce0-fb7d-4c54-899b-1a942d40c899",
                   "title": "Sensitive information intercepted",
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Information disclosure",
-                  "description": "Sensitive information such as the owner’s personal details (like email addresses) or dog/tag details is intercepted during transit by someone without authorisation.",
+                  "description": "Sensitive information such as the owner’s personal details, delivery address, or the dogs information is intercepted during transit by someone without authorisation.",
                   "mitigation": " - Use role-based access control to limit access to sensitive data\n - Encrypt data throughout the process to prevent unauthorised access\n - Implement data masking, so sensitive information is hidden where necessary\n - Don't use/ask for unnecessary sensitive information throughout \n - Use securer communication channels, such as HTTPS, to ensure that data is transmitted safely and discretely",
                   "modelType": "STRIDE",
                   "new": false,
-                  "number": 167,
+                  "number": 155,
                   "score": ""
                 },
                 {
-                  "id": "4d5b304b-81a9-458a-8177-1b4d4303a585",
+                  "id": "48ac0e13-e01a-4228-bb1e-612bf3494aa6",
                   "title": "System flooding",
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Denial of service",
-                  "description": "An attacker could disrupt the email process system (using flooding or similar) to impact the termination detail emails.",
+                  "description": "An attacker disrupting the data flow here (by overloading or other methods) to make this process difficult, impact the datastore, impact the delivery service etc.",
                   "mitigation": " - Monitor for unusual behaviour or traffic and implement automatic blocking or throttling mechanisms to help\n - Have backup methods and protocols in case this happens",
                   "modelType": "STRIDE",
                   "new": false,
-                  "number": 168,
+                  "number": 156,
                   "score": ""
                 }
               ],
               "threatFrequency": {
-                "tampering": 2,
+                "tampering": 1,
                 "informationDisclosure": 1,
                 "denialOfService": 1
               }
             },
-            "id": "43ea9fee-7fd1-4ed5-bad4-9e12a98583e8",
+            "id": "99df17e5-b03d-4e6c-ac5e-fdf26e24ec76",
             "labels": [
-              "Termination details"
+              "Tag data"
             ],
             "source": {
-              "x": 700,
-              "y": 360
+              "cell": "24c8060e-c575-4a03-88b9-d240520dedf1"
             },
             "target": {
-              "x": 350,
-              "y": 130
+              "cell": "d3ae8552-b475-43b6-9b52-b2a80b55a51a"
+            },
+            "vertices": [
+              {
+                "x": 660,
+                "y": 180
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Renew Information",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "847dfebe-eb5c-4dc3-b70a-7dc246ceea5c",
+            "source": {
+              "x": 749,
+              "y": 90
+            },
+            "target": {
+              "cell": "a324c75f-3aca-488a-9863-9b34b48077b7"
+            },
+            "vertices": [
+              {
+                "x": 710,
+                "y": 210
+              }
+            ],
+            "labels": [
+              "Renew Information"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Terminate data",
+              "description": "Email address, tag ID, and dog's name.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "82a2d103-b026-44ac-a9f5-5f2d0d80aca8",
+                  "title": "Attacker alters data",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An attacker changes the termination request data, such as changing the email address, dog information, or registration status.",
+                  "mitigation": " - Use securer communication channels, such as HTTPS, to ensure that data is transmitted safely and discretely\n - Implement hashing or digital signatures to check the integrity of data\n - Validate data throughout transit to ensure it hasn't been tampered with",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 142,
+                  "score": ""
+                },
+                {
+                  "id": "481d482d-c35c-4cc9-959e-fbdf441f75b4",
+                  "title": "Sensitive information intercepted",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Sensitive information such as the owner’s personal details or the dogs information is intercepted during transit by someone without authorisation.",
+                  "mitigation": " - Use role-based access control to limit access to sensitive data\n - Encrypt data throughout the process to prevent unauthorised access\n - Implement data masking, so sensitive information is hidden where necessary\n - Don't use/ask for unnecessary sensitive information throughout \n - Use securer communication channels, such as HTTPS, to ensure that data is transmitted safely and discretely",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 143,
+                  "score": ""
+                },
+                {
+                  "id": "70005346-d88f-47d3-bd88-779868c12001",
+                  "title": "System flooding",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "An attacker floods the system with termination requests, likely leading to the service going down.",
+                  "mitigation": " - Limit the number of termination requests allowed per user or IP address in a given time frame\n - Monitor for unusual behaviour or traffic and implement automatic blocking or throttling mechanisms to help\n - Use load balancers to distribute traffic and handle spikes in requests",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 144,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 1
+              }
+            },
+            "id": "964bc963-bfb0-470c-855e-9f5f1d83d971",
+            "labels": [
+              "Terminate data"
+            ],
+            "source": {
+              "x": 170,
+              "y": 40
+            },
+            "target": {
+              "x": 710,
+              "y": -30
             },
             "vertices": [
               {
                 "x": 430,
-                "y": 340
+                "y": -10
+              },
+              {
+                "x": 550,
+                "y": -40
               }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Terminate information",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "20e8e1b7-d78b-4fe0-b012-136c6db249f1",
+            "source": {
+              "x": 760,
+              "y": -10
+            },
+            "target": {
+              "cell": "5984ba84-b631-445e-8954-e192deeaf9bd"
+            },
+            "vertices": [
+              {
+                "x": 830,
+                "y": 200
+              }
+            ],
+            "labels": [
+              "Terminate information"
             ]
           },
           {
@@ -1644,8 +1880,8 @@
           },
           {
             "position": {
-              "x": 700,
-              "y": 400
+              "x": 560,
+              "y": 430
             },
             "size": {
               "width": 60,
@@ -1683,7 +1919,7 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Spoofing",
-                  "description": "An attacker impersonates the invoice process to issue or alter invoices",
+                  "description": "An attacker impersonates the invoice process to issue or alter invoices.",
                   "mitigation": " - Inform users of this possibility, and how to detect false invoices\n - Use technologies to authenticate legitimate invoices\n - Use strong authentication for access to the invoice system\n - Use digital signatures",
                   "modelType": "STRIDE",
                   "new": false,
@@ -1757,7 +1993,7 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 3,
+                "spoofing": 4,
                 "tampering": 1,
                 "repudiation": 1,
                 "informationDisclosure": 1,
@@ -1769,7 +2005,7 @@
           {
             "position": {
               "x": 520,
-              "y": 220
+              "y": 270
             },
             "size": {
               "width": 60,
@@ -1892,8 +2128,8 @@
           },
           {
             "position": {
-              "x": 700,
-              "y": -83
+              "x": 710,
+              "y": -80
             },
             "size": {
               "width": 60,
@@ -2003,8 +2239,8 @@
           },
           {
             "position": {
-              "x": 700,
-              "y": 320
+              "x": 540,
+              "y": 350
             },
             "size": {
               "width": 60,
@@ -2043,7 +2279,7 @@
                   "severity": "Medium",
                   "type": "Spoofing",
                   "description": "An attacker sends fraudulent emails pretending to be from the council or the registration system",
-                  "mitigation": " - Inform users of this possibility, and how to detect phishing emails\n - Use technologies to authenticate legitimate emails\n",
+                  "mitigation": " - Inform users of this possibility, and how to detect phishing emails\n - Implement SPF, DKIM, and DMARC to prevent email spoofing\n",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 52,
@@ -2052,7 +2288,7 @@
                 {
                   "id": "18810b69-e6cb-4322-b183-adcea1ae579e",
                   "title": "Attacker alters data",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Tampering",
                   "description": "An attacker alters the content of actual real emails in transit",
@@ -2095,7 +2331,7 @@
                   "severity": "Medium",
                   "type": "Denial of service",
                   "description": "An attacker floods the email system with large volumes of emails, disrupting the email service",
-                  "mitigation": " - Implement spam filtering solutions\n - Identify an incident response for these cases\n - Limit the number of email sending and recieving\n - Monitor for unusual behaviour or traffic and implement automatic blocking or throttling mechanisms to help\n",
+                  "mitigation": " - Implement spam filtering solutions\n - Identify an incident response for these cases\n - Limit the number of email sending and receiving\n - Monitor for unusual behaviour or traffic and implement automatic blocking or throttling mechanisms to help\n",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 56,
@@ -2104,7 +2340,7 @@
                 {
                   "id": "41e25968-5e01-4ec4-829c-ba403f1ce6fc",
                   "title": "Attacker gains elevated privileges",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Elevation of privilege",
                   "description": "An attacker gains access to manage/change the email system",
@@ -2116,13 +2352,50 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
-                "tampering": 1,
-                "repudiation": 1,
-                "informationDisclosure": 1,
-                "denialOfService": 1,
-                "elevationOfPrivilege": 1
+                "spoofing": 2,
+                "tampering": 2,
+                "repudiation": 2,
+                "informationDisclosure": 2,
+                "denialOfService": 2,
+                "elevationOfPrivilege": 2
               }
+            }
+          },
+          {
+            "position": {
+              "x": 400,
+              "y": -160
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Login/Registration process"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "1f7f362f-cdbc-4812-bf98-3f4e6a98505a",
+            "zIndex": 19,
+            "data": {
+              "type": "tm.Process",
+              "name": "Login/Registration process",
+              "description": "Handles the registration of an account, and/or the logging in of a user.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
             }
           }
         ]
