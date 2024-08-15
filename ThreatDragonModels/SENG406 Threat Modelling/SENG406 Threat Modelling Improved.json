@@ -1,13 +1,26 @@
 {
   "version": "2.2.0",
   "summary": {
-    "title": "SENG406 Threat Modelling",
-    "owner": "Tara Lipscombe",
-    "description": "Renew and Terminate a Registration",
+    "title": "SENG406 Threat Modelling (Improved)",
+    "owner": "Group 7",
+    "description": "Application Version: 1.0\nDescription: The dog registration system is a web-based application for both desktop and mobile, made for the purpose of registering dogs for their management and traceability. Dog owners can register themselves and their dogs in the system, renew and terminate a registration, and report a lost dog. If a lost dog is found, this can be reported by anyone (not necessarily registered).",
     "id": 0
   },
   "detail": {
-    "contributors": [],
+    "contributors": [
+      {
+        "name": "Sam Miller"
+      },
+      {
+        "name": "Neil Alombro"
+      },
+      {
+        "name": "Celia Allen"
+      },
+      {
+        "name": "Tara Lipscombe"
+      }
+    ],
     "diagrams": [
       {
         "id": 0,
